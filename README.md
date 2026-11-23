@@ -30,6 +30,12 @@ Snow frequency is weighted by calendar days, including leap days across the 2006
 
 The annual-exposure.csv file includes the composite, sensitivity bounds, observed-indicator count and all eleven category scores. The county-readings.csv file includes the physical inputs. The regeneration command below also rebuilds the downloadable research ZIP.
 
+## Exposure clusters
+
+[Open the cluster map](https://yuanrui3.github.io/used-car-exposure-atlas/?layer=clusters). Green outlines mark connected groups from the lowest fifth of annual county scores, and rust outlines mark groups from the highest fifth. At least five counties must share a chain of mapped boundaries. The cutoff includes ties at the last county of each fifth, rounded up. The mean in the region readout weights counties equally. The county nearest the mean member location labels the region. Gray counties can have an extreme score and too few qualifying neighbors to form a cluster. Membership uses the published annual score and is descriptive.
+
+The assembly command regenerates the cluster outlines, average scores and exposure-clusters.csv from the packaged county_edges.json. Its projected arcs use the same Census cartography as the atlas. Point-only contacts and four ambiguous three-owner junction arcs are excluded. Optional geometry rebuilds use node research/geodata/make_cluster_edges.cjs with the same 3.0.1 topology and JavaScript libraries as the original map.
+
 ## Research data
 
 The CSV files use the 2017 Census county definitions. Read FIPS as strings to retain leading zeros. county-readings.csv provides the static county/state/station indicators. seasonal-readings.csv stores 12 calendar months by county. point-readings.csv gives city and urban-area observations with reference locations and their original geographic scope. metric-definitions.json provides definitions, periods, units, color breaks, interpretation and links. Empty cells are missing. The download includes the input snapshot for recreating these summaries.

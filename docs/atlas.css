@@ -32,3 +32,17 @@
 .annual-method h3{font-size:1.05rem}
 .annual-method p{font-size:.92rem;color:var(--soft);margin-top:7px}
 @media(max-width:700px){#annualMapHead{padding:10px 12px}.tabbar button{padding:7px 8px}.inputLinks{min-width:8rem}}
+
+#clusterMapHead{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:7px 18px;padding:12px 20px;border-bottom:1px solid var(--line)}
+#clusterMapHead h2{font-size:1.12rem;letter-spacing:-.025em}
+#clusterMapHead p{font-size:.84rem;color:var(--soft)}
+#clusterMapHead select{max-width:100%;margin-top:1px}
+#clusterMapHead label{max-width:100%}
+#clusterOutlines path{fill:none;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.chip.clusterChip{height:12px;border:1.5px solid;box-sizing:border-box}
+#clusterMembership{margin-top:12px;padding:8px 11px;border-left:3px solid #8d9c96;background:#f1f4f2;font-size:.85rem}
+#clusterMembership.low{background:#eaf5f0;border-color:#145e52}
+#clusterMembership.high{background:#fcf0ea;border-color:#923d2c}
+#clusterMembership span{display:block;margin-top:2px;color:var(--soft)}
+.cluster-method{margin-top:18px}
+@media(max-width:700px){#clusterMapHead{padding:11px 13px}#clusterMapHead select{font-size:.85rem}}

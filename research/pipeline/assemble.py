@@ -1,6 +1,7 @@
 from pathlib import Path
 import csv, json, html, zipfile
 from annual import build_annual
+from clusters import build_clusters
 from collections import OrderedDict
 ROOT=Path(__file__).resolve().parents[1]
 WEB=ROOT.parent/'docs/assets'
@@ -161,11 +162,20 @@ with (WEB/'annual-exposure.csv').open('w',newline='') as file:
         f=r['fips']; rec=annual['records'][f]
         w.writerow([f,r['county'],r['state'],values[f]['annualExposure'],rec['low'],rec['high'],rec['observed'],annual['inputCount'],*rec['categories'].values()])
 
+clusters=build_clusters(values,geo,read('geodata/county_edges.json'))
+(WEB/'clusters.js').write_text('const CLUSTERS='+json.dumps(clusters,separators=(',',':'))+';\n')
+with (WEB/'exposure-clusters.csv').open('w',newline='') as file:
+    w=csv.writer(file)
+    w.writerow(['fips','county','state','annual_score','cluster_id','cluster_class','cluster_counties','cluster_mean','anchor_fips'])
+    for r in geo:
+        f=r['fips']; rid=clusters['membership'].get(f); region=clusters['regions'].get(rid,{})
+        w.writerow([f,r['county'],r['state'],values[f]['annualExposure'],rid,region.get('kind'),region.get('count'),region.get('mean'),region.get('anchor')])
+
 # Keep the in-app download in sync with the data and scoring code.
 with zipfile.ZipFile(WEB/'research-data.zip','w',compression=zipfile.ZIP_DEFLATED) as archive:
     archive.write(ROOT.parent/'README.md','README.md')
     for path in sorted(ROOT.rglob('*')):
         if path.is_file() and path.suffix in {'.py','.cjs','.json','.geojson','.md','.csv','.list'} and 'raw' not in path.parts:
             archive.write(path,path.relative_to(ROOT.parent))
-    for name in ('county-readings.csv','point-readings.csv','seasonal-readings.csv','annual-exposure.csv','terrain-provenance.json','metric-definitions.json'):
+    for name in ('county-readings.csv','point-readings.csv','seasonal-readings.csv','annual-exposure.csv','exposure-clusters.csv','terrain-provenance.json','metric-definitions.json'):
         archive.write(WEB/name,name)

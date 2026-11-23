@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#182d35"><title>Used Car Exposure Atlas</title>
-  <link rel="stylesheet" href="atlas.css">
+  <link rel="stylesheet" href="atlas.css?v=2">
 </head>
 <body>
 <header class="top"><div class="navinner">
@@ -16,13 +16,14 @@
   <p>Compare the yearly climate, road and storm exposure a used car may have experienced in two counties. Select a county to see which conditions drive its score.</p></div>
   <div id="loading" role="status">Loading county data…</div>
   <section id="explorer" hidden>
-    <div class="tabbar" role="group" aria-label="Map category"><button type="button" id="tabAnnual" aria-pressed="true">Annual overview</button><button type="button" id="tabExposure" aria-pressed="false">Everyday exposure</button><button type="button" id="tabEvents" aria-pressed="false">Flood &amp; hail history</button></div>
+    <div class="tabbar" role="group" aria-label="Map category"><button type="button" id="tabAnnual" aria-pressed="true">Annual overview</button><button type="button" id="tabClusters" aria-pressed="false">Exposure clusters</button><button type="button" id="tabExposure" aria-pressed="false">Everyday exposure</button><button type="button" id="tabEvents" aria-pressed="false">Flood &amp; hail history</button></div>
     <div class="columns"><section class="mapcard" aria-label="Interactive map">
       <div id="annualMapHead"><h2>Annual exposure score</h2><span>Full year · 11 categories</span></div>
+      <div id="clusterMapHead" hidden><div><h2>Regional exposure clusters</h2><p id="clusterCounts"></p></div><label>Zoom to a cluster<select id="clusterFinder"></select></label></div>
       <div class="mapcontrols" id="layerControls"><label>Condition<select id="group"></select></label><label id="indicatorLabel">Map reading<select id="metric"></select></label><label id="monthLabel" hidden>Month<select id="month"></select></label></div>
       <div class="mapstage"><svg id="map" viewBox="0 0 990 605" role="img" aria-label="Contiguous United States county exposure map. Use the county search for keyboard selection.">
         <defs><pattern id="missing" width="5" height="5" patternUnits="userSpaceOnUse"><rect width="5" height="5" fill="#e3e6e5"/><path d="M-1 1L1 -1M0 5L5 0M4 6L6 4" stroke="#c0c6c6" stroke-width=".7"/></pattern></defs>
-        <g id="countyPaths"></g><g id="statePaths" pointer-events="none"></g><g id="labels" pointer-events="none"></g><g id="points"></g><g id="selectionMarks" pointer-events="none"></g>
+        <g id="countyPaths"></g><g id="statePaths" pointer-events="none"></g><g id="clusterOutlines" pointer-events="none"></g><g id="labels" pointer-events="none"></g><g id="points"></g><g id="selectionMarks" pointer-events="none"></g>
       </svg>
       <div class="maptools" aria-label="Map controls"><button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button><button id="reset" aria-label="Reset map view" title="Reset view">⌂</button></div><div id="tip" role="tooltip" hidden></div></div>
       <div class="legend"><div class="legendtitle" id="legendTitle"></div><div class="swatches" id="swatches"></div><p class="legendnote" id="legendNote"></p></div>
@@ -30,6 +31,7 @@
     <aside class="detail">
       <div class="detailhead"><div class="overline">COUNTY READOUT</div><div class="pickers"><label for="finder">Find a county, parish or city</label><input id="finder" type="search" placeholder="Search name, state, or FIPS" autocomplete="off" aria-controls="matches"><div class="matches" id="matches" hidden></div></div></div>
       <div class="readingwrap" aria-live="polite"><div class="place"><span class="pin">A</span><h2 id="placeName"></h2></div><p id="placeState" class="muted"></p>
+      <div id="clusterMembership" hidden></div>
       <div class="reading"><strong id="number"></strong><span id="unit"></span></div>
       <div id="annualGauge" hidden aria-hidden="true"><div class="track"><i class="range"></i><i class="marker"></i></div><div class="axis"><span>0</span><span>50 · U.S. average</span><span>100</span></div></div>
       <div class="readingname" id="readingName"></div><div class="meta" id="meta"></div><p class="side-desc" id="sideDesc"></p><div id="annualDrivers" hidden></div><a id="datasource" target="_blank" rel="noopener">View data source</a></div>
@@ -45,6 +47,10 @@
     <p>Snow cover uses all twelve months, weighted by their lengths. Heat, cold and humidity use annual counts or typical-year station records. Flood and hail use average annual report days from 2015–2024. Road conditions, urbanization and airborne particles retain the source periods shown on their layers. These periods together describe a typical year.</p>
     <p>For a missing indicator we use the national midpoint of 50 and keep its weight fixed. The range beside a county’s score shows what happens if every missing indicator takes the lowest or highest possible rank. Counties count equally in the national benchmark. Urban population share represents traffic, and state highway salt use represents treatment. City braking observations and alternative readings remain available on their own layers.</p>
     <p>The weights are a design choice. Estimating damage, remaining life or repair costs would require vehicle histories and inspection outcomes. <a href="assets/annual-exposure.csv" download>Download annual scores and category breakdowns</a>.</p></div>
+    <div class="annual-method cluster-method" id="cluster-method"><h3>How the cluster boundaries are drawn</h3>
+    <p>A lower-exposure cluster contains at least five connected counties in the lowest fifth of annual scores. Higher-exposure clusters use the highest fifth. Each step between counties must cross a shared boundary on the atlas, and clusters may cross state lines. The outline follows the outside edges of the group and any holes within it.</p>
+    <p>Gray includes middle-scoring counties and high or low counties that lack a large enough group. Thresholds use the annual score with its published missing-data assumptions. These descriptive groups summarize geographic exposure. Damage to an individual used car also depends on its mileage, parking and maintenance.</p>
+    <p><a href="assets/exposure-clusters.csv" download>Download county cluster memberships</a>.</p></div>
     <div class="methodgrid"><div><h3>Where a car lived</h3><p>Use the locations and years in the vehicle’s ownership history. Winter residence matters for road salt. A daily commute can cross counties, and garage parking changes sun and salt-air exposure. The map describes the area around a vehicle.</p></div>
     <div><h3>How wear can be tested</h3><p>Compare inspection outcomes for cars of the same model, model year, age and mileage. Use time spent in each location for corrosion and weather, and miles driven there for brakes and suspension. Reserve entire regions and later inspection years to test whether geography improves on age and mileage alone.</p></div></div>
     <details><summary>Layer definitions and sources</summary><div id="methodList"></div></details>
@@ -53,5 +59,5 @@
     </section>
   </section>
 </main><footer><div>Used Car Exposure Atlas</div><a href="#explore">Back to map</a></footer>
-<script src="assets/geography.js"></script><script src="assets/readings.js"></script><script src="atlas.js"></script>
+<script src="assets/geography.js"></script><script src="assets/readings.js"></script><script src="assets/clusters.js"></script><script src="atlas.js?v=2"></script>
 </body></html>

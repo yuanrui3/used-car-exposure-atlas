@@ -19,5 +19,5 @@ const data={
   states:states.map(f=>{const ab=rows.find(r=>r.fips.startsWith(f.id)).state;return [ab,f.properties.name,draw(f),draw.bounds(f).flat().map(rnd)]}),
   projection:{translate:proj.translate(),scale:proj.scale()}
 }
-fs.writeFileSync(__dirname+'/../../dist/assets/geography.js','const GEO='+JSON.stringify(data)+';\n')
-console.log(counties.length,states.length,fs.statSync(__dirname+'/../../dist/assets/geography.js').size)
+fs.writeFileSync(__dirname+'/../../docs/assets/geography.js','const GEO='+JSON.stringify(data)+';\n')
+console.log(counties.length,states.length,fs.statSync(__dirname+'/../../docs/assets/geography.js').size)

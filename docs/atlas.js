@@ -18,6 +18,14 @@
   const citiesByCounty=new Map();
   cities.forEach(c=>{if(!citiesByCounty.has(c.fips))citiesByCounty.set(c.fips,[]);citiesByCounty.get(c.fips).push(c)});
   let mode=groups[0].mode, group=groups[0].id, key=groups[0].keys[0], a='18157', b=null, active='A', waiting=false;
+  const annualView=()=>mode==='annual'||mode==='clusters';
+  const clusterFor=id=>CLUSTERS.regions[CLUSTERS.membership[id]];
+  const clusterType=region=>region.kind==='low'?'Lower exposure':'Higher exposure';
+  const clusterLocation=region=>{
+    const anchor=county.get(region.anchor);
+    return anchor[1]+', '+anchor[2];
+  };
+  const clusterColors={low:['#87c8b5','#145e52'],high:['#e7a18a','#923d2c'],outside:['#e3e7e5','#c4cecb']};
   const preferred=new Map();
   const citySelected={A:null,B:null};
   const monthNames=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -59,7 +67,71 @@
     }
     $('countyPaths').append(cf);$('statePaths').append(sf);$('labels').append(lf);
   }
+  function setupClusters(){
+    const selector=$('clusterFinder');
+    selector.append(opt('','National view'));
+    const counts=[];
+    for(const kind of ['low','high']){
+      const regions=Object.entries(CLUSTERS.regions).filter(([,r])=>r.kind===kind)
+        .sort((x,y)=>y[1].count-x[1].count || x[0].localeCompare(y[0]));
+      const section=document.createElement('optgroup');
+      section.label=kind==='low'?'Lower exposure':'Higher exposure';
+      counts.push(regions.length+' '+(kind==='low'?'lower':'higher'));
+      for(const [id,r] of regions){
+        section.append(opt(id,'Near '+clusterLocation(r)+' · '+r.count+' counties'));
+        $('clusterOutlines').append(svg('path',{id:'outline-'+id,d:r.path,stroke:clusterColors[kind][1]}));
+      }
+      selector.append(section);
+    }
+    $('clusterCounts').textContent=counts.join(' · ')+' exposure clusters';
+    selector.onchange=()=>{
+      const id=selector.value;
+      if(!id){setView([0,0,990,605]);return}
+      const r=CLUSTERS.regions[id];
+      pick(r.anchor);
+      const box=$('outline-'+id).getBBox(),ratio=990/605;
+      const w=Math.min(990,Math.max(120,box.width*1.3,box.height*ratio*1.3));
+      setView([box.x+box.width/2-w/2,box.y+box.height/2-w/(2*ratio),w,w/ratio]);
+    };
+  }
+  function drawClusterMap(){
+    for(const [id,path] of paths){
+      const kind=clusterFor(id)?.kind || 'outside';
+      path.setAttribute('fill',clusterColors[kind][0]);
+    }
+    $('points').replaceChildren();
+    $('legendTitle').textContent='Typical-year used-car exposure';
+    const items=[['low','Lower exposure'],['high','Higher exposure'],['outside','Outside a cluster']];
+    $('swatches').replaceChildren(...items.map(([kind,label])=>{
+      const tag=document.createElement('span');tag.className='swatch';
+      const chip=document.createElement('i');chip.className='chip clusterChip';
+      chip.style.background=clusterColors[kind][0];chip.style.borderColor=clusterColors[kind][1];
+      tag.append(chip,label);return tag;
+    }));
+    $('legendNote').textContent='Outlines join at least '+CLUSTERS.minCount+' neighboring counties in the bottom or top 20% of annual scores (cutoffs about '+fmt(CLUSTERS.lower,2)+' and '+fmt(CLUSTERS.higher,2)+'). Gray also includes isolated high- or low-scoring counties.';
+  }
+  function clusterStatus(id){
+    const region=clusterFor(id);
+    if(region)return clusterType(region)+' cluster · near '+clusterLocation(region);
+    const value=rawValue(id,'annualExposure');
+    if(value==null)return 'Annual score unavailable';
+    if(value<=CLUSTERS.lower||value>=CLUSTERS.higher)return (value<=CLUSTERS.lower?'Low':'High')+' score · fewer than '+CLUSTERS.minCount+' connected counties';
+    return 'Outside a cluster · middle 60% of annual scores';
+  }
+  function showMembership(id){
+    const region=clusterFor(id),box=$('clusterMembership');
+    box.className=region?region.kind:'outside';
+    const label=document.createElement('strong');label.textContent=clusterStatus(id);
+    box.replaceChildren(label);
+    if(region){
+      const detail=document.createElement('span');
+      detail.textContent=region.count+' counties · average score '+fmt(region.mean)+' / 100 · '+region.states.join(', ');
+      box.append(detail);
+    }
+  }
   function drawMapColors(){
+    $('clusterOutlines').style.display=mode==='clusters'?'':'none';
+    if(mode==='clusters'){drawClusterMap();return}
     const m=metrics[key];
     const ff=document.createDocumentFragment();
     for(const [id,p] of paths)p.setAttribute('fill',m.point?'#dce5e2':paint(rawValue(id,key),m));
@@ -92,14 +164,16 @@
     }
   }
   function updateGroup(){
-    const gs=groups.filter(g=>g.mode===mode);if(!gs.some(g=>g.id===group))group=gs[0].id;
+    const gs=groups.filter(g=>g.mode===(mode==='clusters'?'annual':mode));if(!gs.some(g=>g.id===group))group=gs[0].id;
     const gg=gs.find(g=>g.id===group);if(!gg.keys.includes(key))key=preferred.get(group)||gg.keys[0];
     setOpts($('group'),gs.map(g=>[g.id,g.title]),group);
     setOpts($('metric'),gg.keys.map(k=>[k,metrics[k].title]),key);
     $('metric').disabled=gg.keys.length===1;
     $('monthLabel').hidden=!metrics[key].seasonal;$('month').value=String(month);
     $('annualMapHead').hidden=mode!=='annual';
-    $('layerControls').hidden=mode==='annual';
+    $('clusterMapHead').hidden=mode!=='clusters';
+    $('layerControls').hidden=annualView();
+    $('tabClusters').setAttribute('aria-pressed',String(mode==='clusters'));
     $('tabAnnual').setAttribute('aria-pressed',String(mode==='annual'));
     $('tabExposure').setAttribute('aria-pressed',String(mode==='exposure'));$('tabEvents').setAttribute('aria-pressed',String(mode==='events'));
   }
@@ -110,13 +184,14 @@
     const p=new URLSearchParams(location.search);const parsed=Number(p.get('month'));if(parsed>=1&&parsed<=12&&Number.isInteger(parsed))month=parsed-1;const k=p.get('layer'),id=p.get('a'),other=p.get('b');
     if(county.has(id))a=id;
     if(county.has(other))b=other;
+    if(k==='clusters'){mode='clusters';group='overall';key='annualExposure';return}
     if(Object.hasOwn(metrics,k)){key=k;const g=groups.find(g=>g.keys.includes(k));group=g.id;mode=g.mode;preferred.set(group,key)}
   }
   function writeLink(){
     if(!/^https?:$/.test(location.protocol))return;
     const u=new URL(location.href);
     u.searchParams.set('a',a);if(b)u.searchParams.set('b',b);else u.searchParams.delete('b');
-    u.searchParams.set('layer',key);if(metrics[key].seasonal)u.searchParams.set('month',String(month+1));else u.searchParams.delete('month');history.replaceState(null,'',u);
+    u.searchParams.set('layer',mode==='clusters'?'clusters':key);if(metrics[key].seasonal)u.searchParams.set('month',String(month+1));else u.searchParams.delete('month');history.replaceState(null,'',u);
   }
   function renderDetails(){
     const id=mainPlace(),slot=active==='B'&&b?'B':'A',c=county.get(id),m=metrics[key],v=vals(id,key,slot);
@@ -133,10 +208,15 @@
     if(key==='roughLocal'&&DATA.values[id]?.ratedMi!=null)desc+=' Sample length: '+fmt(DATA.values[id].ratedMi,0)+' miles.';
     if(m.point&&v.length)desc+=' '+v.map(x=>x.s+' '+fmt(x.v,m.digits)).join(' · ')+'.';
     $('sideDesc').textContent=desc;$('datasource').href=m.src[0][1];$('datasource').textContent=m.src[0][0];
-    $('datasource').target=mode==='annual'?'_self':'_blank';
-    $('annualGauge').hidden=mode!=='annual';
-    $('annualDrivers').hidden=mode!=='annual';
-    if(mode==='annual') renderAnnualDetails(id);
+    $('datasource').target=annualView()?'_self':'_blank';
+    $('annualGauge').hidden=!annualView();
+    $('annualDrivers').hidden=!annualView();
+    if(annualView())renderAnnualDetails(id);
+    $('clusterMembership').hidden=mode!=='clusters';
+    if(mode==='clusters'){
+      showMembership(id);
+      $('datasource').href='#cluster-method';$('datasource').textContent='How cluster boundaries are drawn';
+    }
     $('compareBtn').textContent=waiting?'Cancel county selection':b?(active==='A'?'Edit county B':'Edit county A'):'Add comparison county';
     $('compareHint').textContent=waiting?'Click the map or search above to choose county B.':b?'Click the map or search to change county '+active+'.':'Click the map or search to change county A.';
     $('swap').hidden=!b;$('clearB').hidden=!b;drawMarks();renderTable();writeLink();
@@ -183,6 +263,10 @@
   function renderAnnualTable(body){
     const total=body.insertRow();total.className='totalRow';total.insertCell().textContent='Annual exposure score';
     annualCell(total,a);annualCell(total,b);
+    if(mode==='clusters'){
+      const row=body.insertRow();row.insertCell().textContent='Regional cluster';
+      row.insertCell().textContent=clusterStatus(a);row.insertCell().textContent=b?clusterStatus(b):'—';
+    }
     for(const g of groups.filter(g=>DATA.annual.components[g.id])){
       const row=body.insertRow(),cell=row.insertCell();cell.textContent=g.title;
       const nav=document.createElement('div');nav.className='inputLinks';
@@ -197,11 +281,11 @@
   function renderTable(){
     const table=$('profile');table.replaceChildren();
     const thr=table.createTHead().insertRow();
-    [mode==='annual'?'Exposure category':'Reading','A · '+county.get(a)[1]+', '+county.get(a)[2],b?'B · '+county.get(b)[1]+', '+county.get(b)[2]:'B · Select a county'].forEach(x=>{const th=document.createElement('th');th.textContent=x;thr.append(th)});
+    [annualView()?'Exposure category':'Reading','A · '+county.get(a)[1]+', '+county.get(a)[2],b?'B · '+county.get(b)[1]+', '+county.get(b)[2]:'B · Select a county'].forEach(x=>{const th=document.createElement('th');th.textContent=x;thr.append(th)});
     const body=table.createTBody();
-    $('profileTitle').textContent=mode==='annual'?'What drives the annual score?':'County profiles';
-    $('profileDesc').textContent=mode==='annual'?'Compare the 11 equally weighted categories. Each score is on the same 0–100 scale. Select an indicator to see its map.':'Compare the readings in their original units. Select a reading to display it on the map.';
-    if(mode==='annual'){renderAnnualTable(body);return}
+    $('profileTitle').textContent=annualView()?'What drives the annual score?':'County profiles';
+    $('profileDesc').textContent=annualView()?'Compare the 11 equally weighted categories. Each score is on the same 0–100 scale. Select an indicator to see its map.':'Compare the readings in their original units. Select a reading to display it on the map.';
+    if(annualView()){renderAnnualTable(body);return}
     for(const g of groups){
       const k=g.id===group?key:preferred.get(g.id)||g.keys[0],m=metrics[k],row=body.insertRow(),td=row.insertCell(),btn=document.createElement('button');btn.textContent=m.title;btn.onclick=()=>{mode=g.mode;group=g.id;key=k;refresh();$('explorer').scrollIntoView({block:'start'})};td.append(btn);
       const meta=document.createElement('div');meta.className='tblsmall';meta.textContent=m.scale+' · '+dated(m);td.append(meta);
@@ -212,7 +296,7 @@
   function pick(id,city=null){
     if(!county.has(id))return;
     const slot=waiting?'B':active;if(slot==='B')b=id;else a=id;active=slot;citySelected[slot]=city;waiting=false;
-    if(city&&mode!=='annual'&&!asPoint(city,key)){const g=groups.find(o=>o.keys.includes('brake'));mode=g.mode;group=g.id;key=city.kind==='brake'?'brake':'delay';preferred.set(group,key);updateGroup();drawMapColors()}
+    if(city&&!annualView()&&!asPoint(city,key)){const g=groups.find(o=>o.keys.includes('brake'));mode=g.mode;group=g.id;key=city.kind==='brake'?'brake':'delay';preferred.set(group,key);updateGroup();drawMapColors()}
     $('finder').value='';$('matches').hidden=true;renderDetails();
   }
   function showMatches(){
@@ -239,7 +323,7 @@
   function setup(){
     setOpts($('month'),monthNames.map((name,i)=>[i,name]),'0');
     $('month').onchange=()=>{month=Number($('month').value);refresh()};
-    makeMap();const cb=document.createElement('button');cb.id='clearB';cb.textContent='Clear B';cb.style.cssText='margin-left:8px;background:white;color:var(--teal)';$('compareBtn').after(cb);
+    makeMap();setupClusters();const cb=document.createElement('button');cb.id='clearB';cb.textContent='Clear B';cb.style.cssText='margin-left:8px;background:white;color:var(--teal)';$('compareBtn').after(cb);
     $('compareBtn').onclick=()=>{if(waiting)waiting=false;else if(b)active=active==='A'?'B':'A';else{waiting=true;$('finder').focus()}renderDetails()};
     cb.onclick=()=>{b=null;active='A';waiting=false;citySelected.B=null;renderDetails()};
     $('swap').onclick=()=>{[a,b]=[b,a];[citySelected.A,citySelected.B]=[citySelected.B,citySelected.A];renderDetails()};
@@ -249,9 +333,10 @@
     document.addEventListener('click',e=>{if(!e.target.closest('.pickers'))$('matches').hidden=true});
     $('group').onchange=()=>{group=$('group').value;key=preferred.get(group)||groups.find(g=>g.id===group).keys[0];refresh()};
     $('metric').onchange=()=>{key=$('metric').value;preferred.set(group,key);refresh()};
+    $('tabClusters').onclick=()=>{mode='clusters';refresh()};
     $('tabAnnual').onclick=()=>{mode='annual';refresh()};
     $('tabExposure').onclick=()=>{mode='exposure';refresh()};$('tabEvents').onclick=()=>{mode='events';refresh()};
-    $('zoomIn').onclick=()=>zoom(.62);$('zoomOut').onclick=()=>zoom(1.65);$('reset').onclick=()=>setView([0,0,990,605]);
+    $('zoomIn').onclick=()=>zoom(.62);$('zoomOut').onclick=()=>zoom(1.65);$('reset').onclick=()=>{$('clusterFinder').value='';setView([0,0,990,605])};
     const map=$('map'),tip=$('tip');
     map.onpointerdown=e=>{drag={x:e.clientX,y:e.clientY,view:[...view]};dragged=false};
     map.onpointermove=e=>{
@@ -261,6 +346,7 @@
       const el=e.target.closest('[data-id]');if(!el||e.pointerType==='touch'){tip.hidden=true;return}
       const id=el.dataset.id,c=county.get(id),idx=el.dataset.city,city=idx!==undefined?cities[+idx]:null;
       tip.textContent=city?city.name+', '+city.state+' · '+fmt(pointValue(city,key),metrics[key].digits)+' '+metrics[key].unit:c[1]+', '+c[2]+' · '+readingText(id,key);
+      if(mode==='clusters')tip.textContent+=' · '+clusterStatus(id);
       const rect=map.parentElement.getBoundingClientRect();tip.hidden=false;
       tip.style.left=Math.max(2,Math.min(rect.width-tip.offsetWidth-2,e.clientX-rect.left+10))+'px';
       tip.style.top=Math.max(2,Math.min(rect.height-tip.offsetHeight-2,e.clientY-rect.top+10))+'px';
