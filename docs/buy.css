@@ -1,0 +1,316 @@
+.buy {
+  max-width: 1250px;
+  margin: auto;
+  padding: clamp(20px, 3.5vw, 48px) clamp(16px, 4vw, 58px) 55px;
+}
+.buy h1 {
+  font-size: clamp(36px, 5vw, 65px);
+  line-height: 1.04;
+  margin: 6px 0 12px;
+  letter-spacing: -0.052em;
+}
+.buy h2 {
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.15;
+  margin: 0 0 10px;
+  letter-spacing: -0.035em;
+}
+.introline {
+  font-size: clamp(16px, 1.7vw, 20px);
+  margin: 0 0 24px;
+  color: #415b61;
+}
+.decision {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 24px;
+  background: #18353e;
+  color: #fff;
+  border-radius: 12px;
+  padding: 22px 28px;
+}
+.decision strong {
+  display: block;
+  font-size: clamp(40px, 5vw, 60px);
+  letter-spacing: -0.045em;
+  line-height: 1.15;
+}
+.decision span {
+  font-size: 14px;
+  color: #d7e9e5;
+}
+.decision-right {
+  border-left: 1px solid #587276;
+  padding-left: 24px;
+  align-self: center;
+}
+.decision-right p {
+  margin: 5px 0 0;
+  color: #e0eceb;
+}
+.assumptions,
+.fieldgrid {
+  display: grid;
+  gap: 12px;
+}
+.assumptions {
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 22px 0 12px;
+}
+.fieldgrid {
+  grid-template-columns: 1fr 1fr;
+}
+.buy label {
+  font-size: 13px;
+  font-weight: 620;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.buy input,
+.buy select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  border: 1px solid #b5c5c3;
+  border-radius: 5px;
+  background: white;
+  padding: 8px 9px;
+  height: 39px;
+  font-size: 15px;
+}
+.buy input:invalid {
+  border-color: #b04630;
+}
+.buy button {
+  background: #fff;
+  border: 1px solid #72928e;
+  border-radius: 5px;
+  color: #15595c;
+  padding: 7px 11px;
+  font-weight: 600;
+}
+.buy button:hover {
+  background: #e9f3ee;
+}
+.demo,
+.small,
+.note {
+  font-size: 13px;
+  color: #50666a;
+  line-height: 1.5;
+}
+.demo {
+  background: #edf2ed;
+  padding: 9px 12px;
+  border-left: 3px solid #63988d;
+  margin: 12px 0 18px;
+}
+.cars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.car {
+  background: white;
+  border: 1px solid #c4d2cd;
+  border-radius: 10px;
+  padding: 18px;
+}
+.car h2 {
+  font-size: 23px;
+}
+.car h3 {
+  font-size: 15px;
+  margin: 14px 0 6px;
+}
+.car details,
+.market details {
+  border-top: 1px solid #d6dfdc;
+  padding: 10px 0;
+  margin-top: 12px;
+}
+.buy summary {
+  font-weight: 650;
+  cursor: pointer;
+}
+.buy details > div {
+  margin-top: 10px;
+}
+.buy .wide {
+  grid-column: 1/-1;
+}
+.cashout {
+  font-weight: 650;
+  color: #15595c;
+  background: #edf4f0;
+  padding: 9px 11px;
+  margin: 12px 0 0;
+}
+.note {
+  margin: 5px 0 10px;
+}
+.histrows li {
+  margin: 6px 0;
+}
+.histrows {
+  list-style: none;
+  padding: 0;
+}
+.histrows button {
+  font-size: 12px;
+  padding: 2px 6px;
+}
+.buy a {
+  color: #15595c;
+}
+.buy .route {
+  display: inline-block;
+  margin-top: 9px;
+  font-size: 13px;
+}
+.market {
+  margin-top: 40px;
+}
+.market > p {
+  max-width: 810px;
+}
+.mapwrap {
+  background: #fff;
+  border: 1px solid #c4d2cd;
+  border-radius: 9px;
+  display: grid;
+  grid-template-columns: minmax(0, 2.5fr) minmax(200px, 1fr);
+  overflow: hidden;
+}
+.mapbody {
+  background: #f8f9f5;
+  min-width: 0;
+  padding: 10px;
+}
+.mapbody svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.mapwrap aside {
+  padding: 19px;
+  border-left: 1px solid #d3ded9;
+}
+.mapwrap aside h3 {
+  margin: 16px 0 5px;
+}
+.mapwrap aside strong {
+  font-size: 30px;
+}
+.mapwrap aside p {
+  margin: 5px 0 12px;
+}
+.legend {
+  display: flex;
+  gap: 13px;
+  font-size: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.legend i {
+  width: 13px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 4px;
+  border: 1px solid #aaa;
+}
+.mapcounty {
+  cursor: pointer;
+  stroke: #fff;
+  stroke-width: 0.2;
+}
+.mapcounty:hover {
+  stroke: #222;
+  stroke-width: 1;
+}
+.buy [hidden] {
+  display: none !important;
+}
+.buy details p {
+  max-width: 920px;
+}
+#mapselection {
+  pointer-events: none;
+  fill: none;
+  stroke: #152f37;
+  stroke-width: 2;
+}
+.buy .err {
+  color: #9c3826;
+}
+@media (max-width: 730px) {
+  .decision,
+  .cars,
+  .mapwrap {
+    grid-template-columns: 1fr;
+  }
+  .decision-right {
+    border-left: 0;
+    border-top: 1px solid #587276;
+    padding: 13px 0 0;
+  }
+  .decision {
+    gap: 8px;
+    padding: 18px;
+  }
+  .assumptions {
+    grid-template-columns: 1fr 1fr;
+  }
+  .assumptions label:first-child {
+    grid-column: 1/-1;
+  }
+  .mapwrap aside {
+    border-left: none;
+    border-top: 1px solid #d3ded9;
+  }
+  .top nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .buy {
+    padding-top: 22px;
+  }
+  .buy h1 {
+    font-size: 40px;
+  }
+  .fieldgrid {
+    gap: 8px;
+  }
+  .car {
+    padding: 14px;
+  }
+}
+.routegrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.routecard {
+  border: 1px solid #c4d2cd;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+}
+.routecard h3 {
+  margin: 0 0 3px;
+  font-size: 18px;
+}
+.routecard p {
+  margin: 4px 0 9px;
+}
+.routecard a {
+  margin-left: 9px;
+  font-size: 13px;
+}
+@media (max-width: 650px) {
+  .routegrid {
+    grid-template-columns: 1fr;
+  }
+}

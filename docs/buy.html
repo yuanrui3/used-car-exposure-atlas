@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#182d35" />
+    <title>Used-car buying comparison | Exposure Atlas</title>
+    <link rel="stylesheet" href="atlas.css?v=2" />
+    <link rel="stylesheet" href="buy.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="navinner">
+        <a class="brand" href="index.html"
+          ><span class="brandmark" aria-hidden="true"
+            ><i></i><i></i><i></i></span
+          >Exposure Atlas</a
+        >
+        <nav aria-label="Sections">
+          <a href="#routes">Search routes</a><a href="#markets">County prices</a
+          ><a href="index.html">Exposure map</a>
+        </nav>
+      </div>
+    </header>
+    <main class="buy" id="quotes">
+      <h1>Is the drive worth it?</h1>
+      <p class="introline">
+        Compare a local car with one farther away. Add the tax, the trip and the
+        repairs each car is likely to need.
+      </p>
+      <section class="decision" aria-live="polite">
+        <div>
+          <span id="resultLabel">Estimated savings before repairs</span
+          ><strong id="resultValue">—</strong><span id="resultLead"></span>
+        </div>
+        <div class="decision-right">
+          <b id="decisionTitle">Checking the comparison</b>
+          <p id="decisionDetail"></p>
+        </div>
+      </section>
+      <div class="assumptions">
+        <label
+          >Start of trip<input
+            id="origin"
+            value="West Lafayette, IN"
+            maxlength="140" /></label
+        ><label
+          >Max drive, one way (min)<input
+            type="number"
+            id="radius"
+            value="180"
+            min="1"
+            max="1440" /></label
+        ><label
+          >Value of time ($/hour)<input
+            type="number"
+            id="timevalue"
+            value="25"
+            min="0"
+            step="any"
+        /></label>
+      </div>
+      <p class="demo" id="exampleNote">
+        Editable Indiana example. Both prices are illustrative. The local trip
+        is the baseline, and the away trip adds $45 in driving costs and three
+        hours. Enter actual quotes to compare your cars.
+      </p>
+      <div class="cars" id="cars"></div>
+      <p class="small">
+        <a href="https://consumer.ftc.gov/articles/buying-used-car-dealer"
+          >FTC guide to written out-the-door quotes and independent
+          inspections</a
+        >
+        ·
+        <a href="https://www.in.gov/bmv/titles/buying-and-selling/"
+          >Indiana BMV guidance on out-of-state tax credits</a
+        >
+      </p>
+      <section id="routes" class="market">
+        <h2>Where to search within three hours</h2>
+        <p>
+          Four town-to-town routes with lower typical asking prices and lower
+          overall exposure in the destination county. On each route, both halves
+          of the listing period showed a price advantage. A car’s time spent in
+          the destination county still needs to be verified.
+        </p>
+        <div class="routegrid" id="routeCards"></div>
+        <p>
+          <b>Two comparable cars on the Pacific Northwest route.</b> In October
+          2026, dealers advertised two clean-title 2016 Porsche Macan S AWDs in
+          excellent condition. The Hillsboro-area car was $12,795 with 136,274
+          miles. The Vancouver car was $11,599 with 134,306 miles. Its $1,196
+          price advantage is the starting point for the tax, fee, trip and
+          repair comparison. In the same sample, a 2017 Toyota Camry in
+          Vancouver was $1,200 more expensive than a same-year Camry in
+          Washington County, Oregon, despite having 4,688 more miles. Their
+          engine/body VIN prefixes matched, although only one ad specified the
+          trim. These are historical ads.
+          <a
+            href="https://www.craigslist.org/view/d/cornelius-clean-title-porsche-macan-awd/81TnqidZQ4jAuQRW6o4bGe"
+            >Oregon ad</a
+          >
+          ·
+          <a
+            href="https://www.craigslist.org/view/d/vancouver-2016-porsche-macan-v6-awd/7SrrEASdJibDjksUStJrkP"
+            >Washington ad</a
+          >
+          ·
+          <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=82.08.0264"
+            >Washington nonresident vehicle-sale rules</a
+          >
+          ·
+          <a
+            href="https://www.oregon.gov/dor/forms/FormsPubs/form-or-591-c-instructions_612-004-1.pdf"
+            >Oregon vehicle use tax</a
+          >
+        </p>
+        <p>
+          <b>Winter still matters in Minnesota.</b> Isanti County averages about
+          110 snow-cover days in the atlas. The three origin counties average
+          roughly 103–109. The overall exposure advantage survives extra weight
+          on winter. Ask for underbody photos and an independent rust inspection
+          on any Minnesota candidate. Eagan and Anoka had no same-model-family,
+          same-year pairs within 5,000 miles after matching the other listed
+          attributes.
+        </p>
+        <p>
+          <b>From West Lafayette, Indiana.</b> Nearby Carroll County scores 37.8
+          for exposure versus 49.9 in Tippecanoe. The price sample contains zero
+          supported listings in Carroll and one in Tippecanoe. Ask for a quote
+          on a specific car in Delphi before making the roughly 40-minute trip.
+          <a
+            href="https://carrollcountyedc.com/about-ccedc/carroll-county/information"
+            >Local drive-time estimate</a
+          >
+        </p>
+        <details>
+          <summary>How the routes were selected</summary>
+          <p>
+            Each county had at least 100 supported listings. The destination
+            scored lower under the eleven-factor index, under a seven-factor
+            weather and environmental comparison, with each atlas category
+            omitted in turn, and with winter weighted at 25%. The overall
+            exposure difference exceeded the atlas’s missing-data range.
+            Model-family bootstrap price ranges did not overlap. The
+            asking-price signal persisted after removing the most common rounded
+            listing location in each county. No single such location supplied
+            half the listings. Geographic screening used county centers before
+            checking actual road times between the named towns.
+          </p>
+          <p>
+            Each selected route also had at least three disjoint near-pairs with
+            matching model family, self-reported condition, fuel, drive,
+            transmission and seller type, at most one model year apart and
+            within 10,000 miles. These small samples check direction only.
+            Percentages are county-level estimates before tax, fees or repairs.
+            Route selection is exploratory and the evidence comes from one
+            listing source and a five-week snapshot.
+          </p>
+        </details>
+      </section>
+      <section id="markets" class="market">
+        <h2>County asking prices</h2>
+        <p>
+          Use the map to decide where to search. The color shows how much higher
+          or lower local asking prices ran after adjusting for vehicle
+          differences.
+        </p>
+        <div class="mapwrap">
+          <div class="mapbody">
+            <svg
+              id="map"
+              viewBox="0 0 990 605"
+              role="img"
+              aria-label="Adjusted asking prices across contiguous United States counties"
+            ></svg>
+            <div class="legend">
+              <span><i style="background: #19706d"></i>Lower</span
+              ><span><i style="background: #f3ecce"></i>Near benchmark</span
+              ><span><i style="background: #b95b3b"></i>Higher</span
+              ><span><i style="background: #e0e4e4"></i>Insufficient data</span>
+            </div>
+          </div>
+          <aside>
+            <label
+              >Find a county<input
+                list="countyList"
+                id="marketChoice"
+                placeholder="County, state"
+                autocomplete="off"
+            /></label>
+            <div id="marketInfo" aria-live="polite">
+              Loading county estimates…
+            </div>
+            <button type="button" id="useDest">Use as away destination</button>
+          </aside>
+        </div>
+        <details>
+          <summary>What the county prices measure</summary>
+          <div id="methods"></div>
+        </details>
+      </section>
+      <datalist id="countyList"></datalist>
+    </main>
+    <footer>
+      <div>Used Car Exposure Atlas</div>
+      <a href="#quotes">Back to comparison</a>
+    </footer>
+    <script src="assets/geography.js"></script>
+    <script src="buy.js"></script>
+  </body>
+</html>

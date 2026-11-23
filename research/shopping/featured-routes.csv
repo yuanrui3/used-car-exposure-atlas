@@ -1,0 +1,5 @@
+origin,destination,origin_fips,destination_fips,towns,one_way_minutes,origin_listings,destination_listings,origin_exposure,destination_exposure,seven_environmental_factor_gap,adjusted_asking_discount_pct,early_discount_pct,late_discount_pct,discount_after_dropping_top_locations_pct,near_pair_count,near_pair_median_discount_pct
+Dakota County MN,Isanti County MN,27037,27059,Eagan to Cambridge,67,242,273,61.8,42.7,10.7,16.4,19.7,15.7,16.4,6,11.7
+Hennepin County MN,Isanti County MN,27053,27059,Minneapolis to Cambridge,55,208,273,61.4,42.7,7.4,11.0,13.5,11.0,10.4,4,8.0
+Anoka County MN,Isanti County MN,27003,27059,Anoka to Cambridge,42,256,273,53.1,42.7,3.8,18.7,18.9,20.6,21.3,6,4.4
+Washington County OR,Clark County WA,41067,53011,Hillsboro to Vancouver,36,197,245,54.5,47.9,11.4,8.0,9.3,7.1,7.6,5,9.3
