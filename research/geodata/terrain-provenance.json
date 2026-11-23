@@ -1,0 +1,20 @@
+{
+  "archive": "conus-monthly-atlas-github-pages.zip",
+  "archive_sha256": "2f1bcc15571fa68630768fe803663c4a8ad832a80f5d076420a78337b59cacd1",
+  "members_sha256": {
+    "docs/data/climate_months/01.json.gz": "133e79ba6e0edeb6f32c30d29a6c49281c697a535710ab983cae6a68c027e583",
+    "docs/data/climate_months/02.json.gz": "0dacbed3c65f9edd12b85d86b81846fd12e7f7b39521f0b14ee9c3ebadca2fdc",
+    "docs/data/climate_months/03.json.gz": "a25536ee75f5e5b927c2fcdb2a10a927a91d19e51127f0e2ff5c319424b7cd95",
+    "docs/data/climate_months/04.json.gz": "004eeb2900a5e357d7545bd6687b37104940f25c3397d1fb70093f7f91e64175",
+    "docs/data/climate_months/05.json.gz": "ba23ca617c28cfb027cb6b63beb5c019a25fa81eb691545065db6bb5d7214f2e",
+    "docs/data/climate_months/06.json.gz": "b33588407067e8069e7a12a1f0f24168ae343d2424b59130505cd6e18ad864a5",
+    "docs/data/climate_months/07.json.gz": "b6a2f868c13c51b83e2847fe160a10cfc3d9140556ecad2a49fbb818f63a131c",
+    "docs/data/climate_months/08.json.gz": "3c5652a3a3c9d6eee24c1682e607e8213ae6bd1cd19bae3392064e96b0533b7e",
+    "docs/data/climate_months/09.json.gz": "1d768dba0b5032eabab4e65e997adc74f08d787d8740728e97397e762e897925",
+    "docs/data/climate_months/10.json.gz": "fb4477c273af1f2a3c845240954996f3835b7f024ed1b2ed3f62a40859420d1c",
+    "docs/data/climate.json": "b0cffb0dae68d8c5e0e77bf15edb4c524b5594bbb5ea9331d7f5cd1dba8d5269",
+    "docs/data/climate_months/12.json.gz": "ce1a64242af4f886ac00c3ac0ce0540a96feb6b366896272cbae1966102fd624",
+    "docs/data/seasonal_snow.json.gz": "11eb7274ddd635e038ac6d1c81bef65e87d6b58d060afd16cda9eb93d4b30254",
+    "docs/data/regional_slope.json.gz": "fad1363b5b858fbe5b58eed94ed32ea022aa85f7f048fe9e078912e68dba090b"
+  }
+}

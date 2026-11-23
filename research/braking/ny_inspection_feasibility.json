@@ -1,0 +1,14 @@
+{
+  "period": "2026-05-29 12:00 to before 13:00, source local time",
+  "transactions": 4932,
+  "eligible": 3107,
+  "result_counts": {
+    "PASS": 3045,
+    "FAIL": 62
+  },
+  "matchable_to_one_facility_county": 2946,
+  "distinct_matched_counties": 61,
+  "source_facility_rows": 10989,
+  "eligibility": "Initial inspection; passenger registration; system safety PASS/FAIL; nonempty make, model and model year; reported odometer >0 and <1,000,000 miles.",
+  "limitations": "One hour of transactions; facility county describes where the vehicle was inspected; it provides no ownership history or cause of rejection. This tests availability only."
+}

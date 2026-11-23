@@ -1,0 +1,702 @@
+place,state,reference_point_county_fips,lat,lon,metric_id,value,unit,period
+Boise,ID,16001,43.599335,-116.229817,brake,15.63,"events/1,000 mi",2016–17
+Huntsville,AL,01089,34.69772,-86.67667,brake,20.08,"events/1,000 mi",2016–17
+Kansas City,KS,20209,39.122539,-94.741781,brake,14.44,"events/1,000 mi",2016–17
+Olathe,KS,20091,38.882031,-94.820054,brake,19.49,"events/1,000 mi",2016–17
+Fort Collins,CO,08069,40.548216,-105.064833,brake,18.71,"events/1,000 mi",2016–17
+Overland Park,KS,20091,38.889042,-94.690584,brake,22.71,"events/1,000 mi",2016–17
+Cape Coral,FL,12071,26.643192,-81.997364,brake,20.29,"events/1,000 mi",2016–17
+Madison,WI,55025,43.087815,-89.429856,brake,13.4,"events/1,000 mi",2016–17
+Colorado Springs,CO,08041,38.867255,-104.760749,brake,22.06,"events/1,000 mi",2016–17
+Port St. Lucie,FL,12111,27.280554,-80.388261,brake,18.37,"events/1,000 mi",2016–17
+Scottsdale,AZ,04013,33.684272,-111.861448,brake,26.13,"events/1,000 mi",2016–17
+Mesa,AZ,04013,33.400626,-111.716487,brake,22.96,"events/1,000 mi",2016–17
+Mobile,AL,01097,30.668246,-88.107853,brake,15.93,"events/1,000 mi",2016–17
+Knoxville,TN,47093,35.97068,-83.94927,brake,18.149,"events/1,000 mi",2016–17
+Lincoln,NE,31109,40.810284,-96.674856,brake,17.76,"events/1,000 mi",2016–17
+Springfield,MO,29077,37.194157,-93.292642,brake,18.96,"events/1,000 mi",2016–17
+Montgomery,AL,01101,32.348503,-86.267307,brake,24.31,"events/1,000 mi",2016–17
+Wichita,KS,20173,37.690638,-97.345836,brake,16.91,"events/1,000 mi",2016–17
+Reno,NV,32031,39.549097,-119.849907,brake,21.9,"events/1,000 mi",2016–17
+Chandler,AZ,04013,33.282765,-111.851819,brake,28.12,"events/1,000 mi",2016–17
+Lexington,KY,21067,38.040678,-84.458272,brake,21.92,"events/1,000 mi",2016–17
+Thornton,CO,08001,39.920433,-104.941413,brake,23.08,"events/1,000 mi",2016–17
+Chattanooga,TN,47065,35.065958,-85.248386,brake,21.43,"events/1,000 mi",2016–17
+Rockford,IL,17201,42.2593,-89.063478,brake,23.71,"events/1,000 mi",2016–17
+Omaha,NE,31055,41.262705,-96.053475,brake,19.62,"events/1,000 mi",2016–17
+Eugene,OR,41039,44.056848,-123.119019,brake,15.41,"events/1,000 mi",2016–17
+Peoria,AZ,04013,33.786186,-112.308042,brake,23.03,"events/1,000 mi",2016–17
+Fort Wayne,IN,18003,41.088193,-85.142791,brake,18.44,"events/1,000 mi",2016–17
+Kansas City,MO,29095,39.125155,-94.550313,brake,18.86,"events/1,000 mi",2016–17
+Des Moines,IA,19153,41.57259,-93.610243,brake,15.42,"events/1,000 mi",2016–17
+Lakewood,CO,08059,39.698939,-105.117573,brake,24.18,"events/1,000 mi",2016–17
+Tucson,AZ,04019,32.153036,-110.870773,brake,24,"events/1,000 mi",2016–17
+Gilbert,AZ,04013,33.310345,-111.743121,brake,24.63,"events/1,000 mi",2016–17
+Tallahassee,FL,12073,30.453529,-84.252272,brake,17.27,"events/1,000 mi",2016–17
+Akron,OH,39153,41.080456,-81.521429,brake,16.84,"events/1,000 mi",2016–17
+Oklahoma City,OK,40109,35.467079,-97.513657,brake,18.97,"events/1,000 mi",2016–17
+Chesapeake,VA,51550,36.679376,-76.301788,brake,17.76,"events/1,000 mi",2016–17
+Clarksville,TN,47125,36.56643,-87.345216,brake,16.93,"events/1,000 mi",2016–17
+St. Petersburg,FL,12103,27.762727,-82.644131,brake,20.63,"events/1,000 mi",2016–17
+Birmingham,AL,01073,33.527174,-86.797036,brake,22.42,"events/1,000 mi",2016–17
+Tulsa,OK,40143,36.127949,-95.902316,brake,20.5,"events/1,000 mi",2016–17
+Columbus,GA,13215,32.510191,-84.874946,brake,24.16,"events/1,000 mi",2016–17
+Augusta,GA,13245,33.365531,-82.073422,brake,22.8,"events/1,000 mi",2016–17
+Miami,FL,12086,25.775163,-80.208615,brake,32.6,"events/1,000 mi",2016–17
+Albuquerque,NM,35001,35.10478,-106.646809,brake,22.22,"events/1,000 mi",2016–17
+Dayton,OH,39113,39.784743,-84.199632,brake,16.97,"events/1,000 mi",2016–17
+Aurora,IL,17089,41.763455,-88.290099,brake,29.19,"events/1,000 mi",2016–17
+Milwaukee,WI,55079,43.063348,-87.966695,brake,20.53,"events/1,000 mi",2016–17
+Fort Lauderdale,FL,12011,26.141227,-80.146731,brake,24.8,"events/1,000 mi",2016–17
+Macon,GA,13021,32.80899,-83.69406,brake,17.31,"events/1,000 mi",2016–17
+Tempe,AZ,04013,33.388414,-111.931782,brake,27.55,"events/1,000 mi",2016–17
+Joliet,IL,17197,41.516866,-88.147963,brake,23.78,"events/1,000 mi",2016–17
+Virginia Beach,VA,51810,36.779525,-76.029142,brake,20.93,"events/1,000 mi",2016–17
+Salt Lake City,UT,49035,40.776928,-111.930991,brake,20.56,"events/1,000 mi",2016–17
+Henderson,NV,32003,36.008958,-115.0268,brake,22.81,"events/1,000 mi",2016–17
+Jacksonville,FL,12031,30.336864,-81.661603,brake,18.84,"events/1,000 mi",2016–17
+Naperville,IL,17043,41.749173,-88.162019,brake,29.29,"events/1,000 mi",2016–17
+Jackson,MS,28049,32.315834,-90.21285,brake,16.51,"events/1,000 mi",2016–17
+Sioux Falls,SD,46099,43.540696,-96.731962,brake,12.29,"events/1,000 mi",2016–17
+Toledo,OH,39095,41.664071,-83.581861,brake,20.75,"events/1,000 mi",2016–17
+Indianapolis,IN,18097,39.776664,-86.145935,brake,21.04,"events/1,000 mi",2016–17
+Shreveport,LA,22017,32.466879,-93.792193,brake,22.37,"events/1,000 mi",2016–17
+Newport News,VA,51700,37.076136,-76.52198,brake,23.02,"events/1,000 mi",2016–17
+Denver,CO,08031,39.76185,-104.881105,brake,23.84,"events/1,000 mi",2016–17
+Phoenix,AZ,04013,33.572154,-112.090132,brake,27.43,"events/1,000 mi",2016–17
+Syracuse,NY,36067,43.040998,-76.143554,brake,19.02,"events/1,000 mi",2016–17
+Spokane,WA,53063,47.666935,-117.433322,brake,13.92,"events/1,000 mi",2016–17
+Glendale,AZ,04013,33.533111,-112.189901,brake,28.97,"events/1,000 mi",2016–17
+Hollywood,FL,12011,26.030967,-80.164609,brake,30.26,"events/1,000 mi",2016–17
+Aurora,CO,08005,39.709537,-104.720509,brake,26.78,"events/1,000 mi",2016–17
+Orlando,FL,12095,28.40865,-81.254805,brake,23.04,"events/1,000 mi",2016–17
+Louisville,KY,21111,38.165376,-85.647377,brake,21.38,"events/1,000 mi",2016–17
+Pembroke Pines,FL,12011,26.014716,-80.340171,brake,29.85,"events/1,000 mi",2016–17
+Memphis,TN,47157,35.109164,-89.968511,brake,27.99,"events/1,000 mi",2016–17
+Tampa,FL,12057,27.970086,-82.479673,brake,21.23,"events/1,000 mi",2016–17
+Salem,OR,41047,44.9239,-123.023007,brake,19.62,"events/1,000 mi",2016–17
+Miramar,FL,12011,25.972529,-80.338582,brake,30.82,"events/1,000 mi",2016–17
+Cleveland,OH,39035,41.478462,-81.679435,brake,17.68,"events/1,000 mi",2016–17
+Nashville,TN,47037,36.1718,-86.785002,brake,19.64,"events/1,000 mi",2016–17
+Jersey City,NJ,34017,40.711417,-74.06476,brake,30.04,"events/1,000 mi",2016–17
+New York,NY,36047,40.662712,-73.938677,brake,31.92,"events/1,000 mi",2016–17
+Little Rock,AR,05119,34.725393,-92.358556,brake,22.98,"events/1,000 mi",2016–17
+Richmond,VA,51760,37.531399,-77.476009,brake,21.38,"events/1,000 mi",2016–17
+Vancouver,WA,53011,45.637156,-122.596567,brake,17.75,"events/1,000 mi",2016–17
+St. Louis,MO,29510,38.635699,-90.244582,brake,21.76,"events/1,000 mi",2016–17
+Rochester,NY,36055,43.169927,-77.616891,brake,23.27,"events/1,000 mi",2016–17
+Detroit,MI,26163,42.383037,-83.102237,brake,25.98,"events/1,000 mi",2016–17
+Enterprise,NV,32003,36.009143,-115.227824,brake,29.6,"events/1,000 mi",2016–17
+Norfolk,VA,51710,36.923015,-76.244641,brake,19.63,"events/1,000 mi",2016–17
+Hialeah,FL,12086,25.869941,-80.302865,brake,30.32,"events/1,000 mi",2016–17
+Yonkers,NY,36119,40.945862,-73.867446,brake,31.67,"events/1,000 mi",2016–17
+Metairie,LA,22051,29.997837,-90.177781,brake,20.01,"events/1,000 mi",2016–17
+Las Vegas,NV,32003,36.233499,-115.264037,brake,25.45,"events/1,000 mi",2016–17
+Grand Rapids,MI,26081,42.961156,-85.65557,brake,17.78,"events/1,000 mi",2016–17
+Bellevue,WA,53033,47.597837,-122.15648,brake,25.57,"events/1,000 mi",2016–17
+Chicago,IL,17031,41.837045,-87.684939,brake,28.78,"events/1,000 mi",2016–17
+St. Paul,MN,27123,44.948901,-93.104063,brake,19.25,"events/1,000 mi",2016–17
+Minneapolis,MN,27053,44.963324,-93.26832,brake,17.35,"events/1,000 mi",2016–17
+Columbus,OH,39049,39.983938,-82.984882,brake,18.73,"events/1,000 mi",2016–17
+Newark,NJ,34013,40.72422,-74.172574,brake,31.75,"events/1,000 mi",2016–17
+Paterson,NJ,34031,40.914766,-74.162829,brake,35.37,"events/1,000 mi",2016–17
+Buffalo,NY,36029,42.892492,-78.859686,brake,26.63,"events/1,000 mi",2016–17
+Tacoma,WA,53053,47.252199,-122.459832,brake,19.73,"events/1,000 mi",2016–17
+Paradise,NV,32003,36.087148,-115.135519,brake,29.28,"events/1,000 mi",2016–17
+Seattle,WA,53033,47.619335,-122.351538,brake,20.62,"events/1,000 mi",2016–17
+Spring Valley,NV,32003,36.095178,-115.263609,brake,30.91,"events/1,000 mi",2016–17
+Savannah,GA,13051,32.018043,-81.196492,brake,17.11,"events/1,000 mi",2016–17
+North Las Vegas,NV,32003,36.289865,-115.089181,brake,29.17,"events/1,000 mi",2016–17
+Pittsburgh,PA,42003,40.439936,-79.975676,brake,25.21,"events/1,000 mi",2016–17
+Arlington,VA,51013,38.878337,-77.100703,brake,25.27,"events/1,000 mi",2016–17
+Cincinnati,OH,39061,39.140183,-84.505829,brake,19.08,"events/1,000 mi",2016–17
+New Orleans,LA,22071,30.05342,-89.934502,brake,19.53,"events/1,000 mi",2016–17
+Atlanta,GA,13121,33.762909,-84.422675,brake,32.2,"events/1,000 mi",2016–17
+Portland,OR,41051,45.536951,-122.649971,brake,22.01,"events/1,000 mi",2016–17
+Sunrise Manor,NV,32003,36.178338,-115.048722,brake,28.35,"events/1,000 mi",2016–17
+Bridgeport,CT,09001,41.187393,-73.195757,brake,35.77,"events/1,000 mi",2016–17
+Baton Rouge,LA,22033,30.440443,-91.133166,brake,26.6,"events/1,000 mi",2016–17
+Philadelphia,PA,42101,40.009376,-75.133346,brake,43.88,"events/1,000 mi",2016–17
+Alexandria,VA,51510,38.819251,-77.08367,brake,27.48,"events/1,000 mi",2016–17
+Providence,RI,44007,41.823056,-71.418784,brake,26.5,"events/1,000 mi",2016–17
+Springfield,MA,25013,42.115454,-72.539978,brake,23.98,"events/1,000 mi",2016–17
+Worcester,MA,25027,42.269478,-71.807783,brake,26.87,"events/1,000 mi",2016–17
+Boston,MA,25025,42.338551,-71.018253,brake,26.12,"events/1,000 mi",2016–17
+Washington,DC,11001,38.904247,-77.016517,brake,27.21,"events/1,000 mi",2016–17
+Baltimore,MD,24510,39.300032,-76.610476,brake,30.58,"events/1,000 mi",2016–17
+Akron OH,OH,39153,41.080456,-81.521429,delay,42,hr/commuter/year,2024
+Akron OH,OH,39153,41.080456,-81.521429,peak,15,% of peak VMT,2024
+Albany-Schenectady NY,NY,36001,42.665745,-73.798353,delay,43,hr/commuter/year,2024
+Albany-Schenectady NY,NY,36001,42.665745,-73.798353,peak,11.8,% of peak VMT,2024
+Albuquerque NM,NM,35001,35.10478,-106.646809,delay,48,hr/commuter/year,2024
+Albuquerque NM,NM,35001,35.10478,-106.646809,peak,21.5,% of peak VMT,2024
+Allentown PA-NJ,PA,42077,40.593648,-75.478393,delay,36,hr/commuter/year,2024
+Allentown PA-NJ,PA,42077,40.593648,-75.478393,peak,16,% of peak VMT,2024
+Atlanta GA,GA,13121,33.762909,-84.422675,delay,87,hr/commuter/year,2024
+Atlanta GA,GA,13121,33.762909,-84.422675,peak,30.1,% of peak VMT,2024
+Austin TX,TX,48453,30.298622,-97.754134,delay,64,hr/commuter/year,2024
+Austin TX,TX,48453,30.298622,-97.754134,peak,32.1,% of peak VMT,2024
+Bakersfield CA,CA,06029,35.353171,-119.037919,delay,34,hr/commuter/year,2024
+Bakersfield CA,CA,06029,35.353171,-119.037919,peak,15.1,% of peak VMT,2024
+Baltimore MD,MD,24510,39.300032,-76.610476,delay,68,hr/commuter/year,2024
+Baltimore MD,MD,24510,39.300032,-76.610476,peak,31.3,% of peak VMT,2024
+Baton Rouge LA,LA,22033,30.440443,-91.133166,delay,68,hr/commuter/year,2024
+Baton Rouge LA,LA,22033,30.440443,-91.133166,peak,23.6,% of peak VMT,2024
+Beaumont TX,TX,48245,30.084912,-94.14533,delay,35,hr/commuter/year,2024
+Beaumont TX,TX,48245,30.084912,-94.14533,peak,10,% of peak VMT,2024
+Birmingham AL,AL,01073,33.527174,-86.797036,delay,57,hr/commuter/year,2024
+Birmingham AL,AL,01073,33.527174,-86.797036,peak,13.8,% of peak VMT,2024
+Boise ID,ID,16001,43.599335,-116.229817,delay,47,hr/commuter/year,2024
+Boise ID,ID,16001,43.599335,-116.229817,peak,23.4,% of peak VMT,2024
+Boston MA-NH-RI,MA,25025,42.338551,-71.018253,delay,80,hr/commuter/year,2024
+Boston MA-NH-RI,MA,25025,42.338551,-71.018253,peak,23.6,% of peak VMT,2024
+Boulder CO,CO,08013,40.024431,-105.251251,delay,49,hr/commuter/year,2024
+Boulder CO,CO,08013,40.024431,-105.251251,peak,29.4,% of peak VMT,2024
+Bridgeport-Stamford CT-NY,CT,09001,41.187393,-73.195757,delay,77,hr/commuter/year,2024
+Bridgeport-Stamford CT-NY,CT,09001,41.187393,-73.195757,peak,32.1,% of peak VMT,2024
+Brownsville TX,TX,48061,25.995689,-97.450848,delay,24,hr/commuter/year,2024
+Brownsville TX,TX,48061,25.995689,-97.450848,peak,6.7,% of peak VMT,2024
+Buffalo NY,NY,36029,42.892492,-78.859686,delay,45,hr/commuter/year,2024
+Buffalo NY,NY,36029,42.892492,-78.859686,peak,14.4,% of peak VMT,2024
+Cape Coral FL,FL,12071,26.643192,-81.997364,delay,43,hr/commuter/year,2024
+Cape Coral FL,FL,12071,26.643192,-81.997364,peak,18.4,% of peak VMT,2024
+Charleston-North Charleston SC,SC,45019,32.828017,-79.972896,delay,68,hr/commuter/year,2024
+Charleston-North Charleston SC,SC,45019,32.828017,-79.972896,peak,34.6,% of peak VMT,2024
+Charlotte NC-SC,NC,37119,35.209045,-80.83099,delay,64,hr/commuter/year,2024
+Charlotte NC-SC,NC,37119,35.209045,-80.83099,peak,25.2,% of peak VMT,2024
+Chicago IL-IN,IL,17031,41.837045,-87.684939,delay,87,hr/commuter/year,2024
+Chicago IL-IN,IL,17031,41.837045,-87.684939,peak,28.6,% of peak VMT,2024
+Cincinnati OH-KY-IN,OH,39061,39.140183,-84.505829,delay,50,hr/commuter/year,2024
+Cincinnati OH-KY-IN,OH,39061,39.140183,-84.505829,peak,20.3,% of peak VMT,2024
+Cleveland OH,OH,39035,41.478462,-81.679435,delay,52,hr/commuter/year,2024
+Cleveland OH,OH,39035,41.478462,-81.679435,peak,14.3,% of peak VMT,2024
+Colorado Springs CO,CO,08041,38.867255,-104.760749,delay,61,hr/commuter/year,2024
+Colorado Springs CO,CO,08041,38.867255,-104.760749,peak,24.5,% of peak VMT,2024
+Columbia SC,SC,45079,34.040519,-80.906099,delay,48,hr/commuter/year,2024
+Columbia SC,SC,45079,34.040519,-80.906099,peak,15.8,% of peak VMT,2024
+Columbus OH,OH,39049,39.983938,-82.984882,delay,58,hr/commuter/year,2024
+Columbus OH,OH,39049,39.983938,-82.984882,peak,23.1,% of peak VMT,2024
+Corpus Christi TX,TX,48355,27.749359,-97.417229,delay,28,hr/commuter/year,2024
+Corpus Christi TX,TX,48355,27.749359,-97.417229,peak,9.4,% of peak VMT,2024
+Dallas-Fort Worth-Arlington TX,TX,48113,32.793333,-96.766513,delay,69,hr/commuter/year,2024
+Dallas-Fort Worth-Arlington TX,TX,48113,32.793333,-96.766513,peak,33.8,% of peak VMT,2024
+Dayton OH,OH,39113,39.784743,-84.199632,delay,32,hr/commuter/year,2024
+Dayton OH,OH,39113,39.784743,-84.199632,peak,11,% of peak VMT,2024
+Denver-Aurora CO,CO,08031,39.76185,-104.881105,delay,76,hr/commuter/year,2024
+Denver-Aurora CO,CO,08031,39.76185,-104.881105,peak,37,% of peak VMT,2024
+Detroit MI,MI,26163,42.383037,-83.102237,delay,68,hr/commuter/year,2024
+Detroit MI,MI,26163,42.383037,-83.102237,peak,23.2,% of peak VMT,2024
+El Paso TX-NM,TX,48141,31.84778,-106.431106,delay,35,hr/commuter/year,2024
+El Paso TX-NM,TX,48141,31.84778,-106.431106,peak,14.1,% of peak VMT,2024
+Eugene OR,OR,41039,44.056848,-123.119019,delay,47,hr/commuter/year,2024
+Eugene OR,OR,41039,44.056848,-123.119019,peak,13.2,% of peak VMT,2024
+Fresno CA,CA,06019,36.782684,-119.793359,delay,49,hr/commuter/year,2024
+Fresno CA,CA,06019,36.782684,-119.793359,peak,24.3,% of peak VMT,2024
+Grand Rapids MI,MI,26081,42.961156,-85.65557,delay,47,hr/commuter/year,2024
+Grand Rapids MI,MI,26081,42.961156,-85.65557,peak,12.6,% of peak VMT,2024
+Greensboro NC,NC,37081,36.09485,-79.823624,delay,40,hr/commuter/year,2024
+Greensboro NC,NC,37081,36.09485,-79.823624,peak,8,% of peak VMT,2024
+Hartford CT,CT,09003,41.765933,-72.681579,delay,56,hr/commuter/year,2024
+Hartford CT,CT,09003,41.765933,-72.681579,peak,18.1,% of peak VMT,2024
+Houston TX,TX,48201,29.785743,-95.388806,delay,77,hr/commuter/year,2024
+Houston TX,TX,48201,29.785743,-95.388806,peak,36.1,% of peak VMT,2024
+Indianapolis IN,IN,18097,39.776664,-86.145935,delay,50,hr/commuter/year,2024
+Indianapolis IN,IN,18097,39.776664,-86.145935,peak,19.7,% of peak VMT,2024
+Indio-Cathedral City CA,CA,06065,33.731639,-116.235971,delay,29,hr/commuter/year,2024
+Indio-Cathedral City CA,CA,06065,33.731639,-116.235971,peak,6.2,% of peak VMT,2024
+Jackson MS,MS,28049,32.315834,-90.21285,delay,53,hr/commuter/year,2024
+Jackson MS,MS,28049,32.315834,-90.21285,peak,14.1,% of peak VMT,2024
+Jacksonville FL,FL,12031,30.336864,-81.661603,delay,61,hr/commuter/year,2024
+Jacksonville FL,FL,12031,30.336864,-81.661603,peak,25.5,% of peak VMT,2024
+Kansas City MO-KS,MO,29095,39.125155,-94.550313,delay,58,hr/commuter/year,2024
+Kansas City MO-KS,MO,29095,39.125155,-94.550313,peak,19.8,% of peak VMT,2024
+Knoxville TN,TN,47093,35.97068,-83.94927,delay,52,hr/commuter/year,2024
+Knoxville TN,TN,47093,35.97068,-83.94927,peak,15.6,% of peak VMT,2024
+Lancaster-Palmdale CA,CA,06037,34.693558,-118.175305,delay,25,hr/commuter/year,2024
+Lancaster-Palmdale CA,CA,06037,34.693558,-118.175305,peak,9.2,% of peak VMT,2024
+Laredo TX,TX,48479,27.560379,-99.489181,delay,44,hr/commuter/year,2024
+Laredo TX,TX,48479,27.560379,-99.489181,peak,27.3,% of peak VMT,2024
+Las Vegas-Henderson NV,NV,32003,36.233499,-115.264037,delay,57,hr/commuter/year,2024
+Las Vegas-Henderson NV,NV,32003,36.233499,-115.264037,peak,24.5,% of peak VMT,2024
+Little Rock AR,AR,05119,34.725393,-92.358556,delay,59,hr/commuter/year,2024
+Little Rock AR,AR,05119,34.725393,-92.358556,peak,17.4,% of peak VMT,2024
+Los Angeles-Long Beach-Anaheim CA,CA,06037,34.019394,-118.410825,delay,137,hr/commuter/year,2024
+Los Angeles-Long Beach-Anaheim CA,CA,06037,34.019394,-118.410825,peak,52.2,% of peak VMT,2024
+Louisville-Jefferson County KY-IN,KY,21111,38.165376,-85.647377,delay,54,hr/commuter/year,2024
+Louisville-Jefferson County KY-IN,KY,21111,38.165376,-85.647377,peak,21.1,% of peak VMT,2024
+Madison WI,WI,55025,43.087815,-89.429856,delay,52,hr/commuter/year,2024
+Madison WI,WI,55025,43.087815,-89.429856,peak,21.3,% of peak VMT,2024
+McAllen TX,TX,48215,26.224966,-98.246083,delay,32,hr/commuter/year,2024
+McAllen TX,TX,48215,26.224966,-98.246083,peak,11.7,% of peak VMT,2024
+Memphis TN-MS-AR,TN,47157,35.109164,-89.968511,delay,58,hr/commuter/year,2024
+Memphis TN-MS-AR,TN,47157,35.109164,-89.968511,peak,16.1,% of peak VMT,2024
+Miami FL,FL,12086,25.775163,-80.208615,delay,93,hr/commuter/year,2024
+Miami FL,FL,12086,25.775163,-80.208615,peak,43.6,% of peak VMT,2024
+Milwaukee WI,WI,55079,43.063348,-87.966695,delay,57,hr/commuter/year,2024
+Milwaukee WI,WI,55079,43.063348,-87.966695,peak,20,% of peak VMT,2024
+Minneapolis-St. Paul MN-WI,MN,27053,44.963324,-93.26832,delay,73,hr/commuter/year,2024
+Minneapolis-St. Paul MN-WI,MN,27053,44.963324,-93.26832,peak,27.8,% of peak VMT,2024
+Nashville-Davidson TN,TN,47037,36.1718,-86.785002,delay,83,hr/commuter/year,2024
+Nashville-Davidson TN,TN,47037,36.1718,-86.785002,peak,25.9,% of peak VMT,2024
+New Haven CT,CT,09009,41.310809,-72.924953,delay,56,hr/commuter/year,2024
+New Haven CT,CT,09009,41.310809,-72.924953,peak,17.3,% of peak VMT,2024
+New Orleans LA,LA,22071,30.05342,-89.934502,delay,68,hr/commuter/year,2024
+New Orleans LA,LA,22071,30.05342,-89.934502,peak,29.4,% of peak VMT,2024
+New York-Newark NY-NJ-CT,NY,36047,40.662712,-73.938677,delay,99,hr/commuter/year,2024
+New York-Newark NY-NJ-CT,NY,36047,40.662712,-73.938677,peak,39.8,% of peak VMT,2024
+Oklahoma City OK,OK,40109,35.467079,-97.513657,delay,64,hr/commuter/year,2024
+Oklahoma City OK,OK,40109,35.467079,-97.513657,peak,24.9,% of peak VMT,2024
+Omaha NE-IA,NE,31055,41.262705,-96.053475,delay,52,hr/commuter/year,2024
+Omaha NE-IA,NE,31055,41.262705,-96.053475,peak,24.4,% of peak VMT,2024
+Orlando FL,FL,12095,28.40865,-81.254805,delay,68,hr/commuter/year,2024
+Orlando FL,FL,12095,28.40865,-81.254805,peak,23.2,% of peak VMT,2024
+Oxnard CA,CA,06111,34.199436,-119.207515,delay,40,hr/commuter/year,2024
+Oxnard CA,CA,06111,34.199436,-119.207515,peak,26.4,% of peak VMT,2024
+Pensacola FL-AL,FL,12033,30.440989,-87.191242,delay,37,hr/commuter/year,2024
+Pensacola FL-AL,FL,12033,30.440989,-87.191242,peak,9.5,% of peak VMT,2024
+Philadelphia PA-NJ-DE-MD,PA,42101,40.009376,-75.133346,delay,70,hr/commuter/year,2024
+Philadelphia PA-NJ-DE-MD,PA,42101,40.009376,-75.133346,peak,25.5,% of peak VMT,2024
+Phoenix-Mesa AZ,AZ,04013,33.572154,-112.090132,delay,76,hr/commuter/year,2024
+Phoenix-Mesa AZ,AZ,04013,33.572154,-112.090132,peak,26.3,% of peak VMT,2024
+Pittsburgh PA,PA,42003,40.439936,-79.975676,delay,53,hr/commuter/year,2024
+Pittsburgh PA,PA,42003,40.439936,-79.975676,peak,16.5,% of peak VMT,2024
+Portland OR-WA,OR,41051,45.536951,-122.649971,delay,72,hr/commuter/year,2024
+Portland OR-WA,OR,41051,45.536951,-122.649971,peak,36,% of peak VMT,2024
+Poughkeepsie-Newburgh NY-NJ,NY,36027,41.694595,-73.919869,delay,35,hr/commuter/year,2024
+Poughkeepsie-Newburgh NY-NJ,NY,36027,41.694595,-73.919869,peak,7,% of peak VMT,2024
+Providence RI-MA,RI,44007,41.823056,-71.418784,delay,52,hr/commuter/year,2024
+Providence RI-MA,RI,44007,41.823056,-71.418784,peak,25.2,% of peak VMT,2024
+Provo-Orem UT,UT,49049,40.245312,-111.645057,delay,38,hr/commuter/year,2024
+Provo-Orem UT,UT,49049,40.245312,-111.645057,peak,17.6,% of peak VMT,2024
+Raleigh NC,NC,37183,35.831868,-78.641042,delay,42,hr/commuter/year,2024
+Raleigh NC,NC,37183,35.831868,-78.641042,peak,19.2,% of peak VMT,2024
+Richmond VA,VA,51760,37.531399,-77.476009,delay,42,hr/commuter/year,2024
+Richmond VA,VA,51760,37.531399,-77.476009,peak,11.6,% of peak VMT,2024
+Riverside-San Bernardino CA,CA,06065,33.938143,-117.393168,delay,95,hr/commuter/year,2024
+Riverside-San Bernardino CA,CA,06065,33.938143,-117.393168,peak,41.8,% of peak VMT,2024
+Rochester NY,NY,36055,43.169927,-77.616891,delay,41,hr/commuter/year,2024
+Rochester NY,NY,36055,43.169927,-77.616891,peak,15.8,% of peak VMT,2024
+Sacramento CA,CA,06067,38.567694,-121.468161,delay,72,hr/commuter/year,2024
+Sacramento CA,CA,06067,38.567694,-121.468161,peak,36.5,% of peak VMT,2024
+Salem OR,OR,41047,44.9239,-123.023007,delay,42,hr/commuter/year,2024
+Salem OR,OR,41047,44.9239,-123.023007,peak,13,% of peak VMT,2024
+Salt Lake City-West Valley City UT,UT,49035,40.776928,-111.930991,delay,58,hr/commuter/year,2024
+Salt Lake City-West Valley City UT,UT,49035,40.776928,-111.930991,peak,27.8,% of peak VMT,2024
+San Antonio TX,TX,48029,29.462809,-98.524635,delay,48,hr/commuter/year,2024
+San Antonio TX,TX,48029,29.462809,-98.524635,peak,27.2,% of peak VMT,2024
+San Diego CA,CA,06073,32.814977,-117.135562,delay,88,hr/commuter/year,2024
+San Diego CA,CA,06073,32.814977,-117.135562,peak,32.9,% of peak VMT,2024
+San Francisco-Oakland CA,CA,06001,37.784954,-122.270088,delay,134,hr/commuter/year,2024
+San Francisco-Oakland CA,CA,06001,37.784954,-122.270088,peak,50.1,% of peak VMT,2024
+San Jose CA,CA,06085,37.296011,-121.814552,delay,94,hr/commuter/year,2024
+San Jose CA,CA,06085,37.296011,-121.814552,peak,42.3,% of peak VMT,2024
+Sarasota-Bradenton FL,FL,12115,27.338257,-82.543721,delay,35,hr/commuter/year,2024
+Sarasota-Bradenton FL,FL,12115,27.338257,-82.543721,peak,18.5,% of peak VMT,2024
+Seattle WA,WA,53033,47.619335,-122.351538,delay,87,hr/commuter/year,2024
+Seattle WA,WA,53033,47.619335,-122.351538,peak,39,% of peak VMT,2024
+Spokane WA,WA,53063,47.666935,-117.433322,delay,47,hr/commuter/year,2024
+Spokane WA,WA,53063,47.666935,-117.433322,peak,14.8,% of peak VMT,2024
+Springfield MA-CT,MA,25013,42.115454,-72.539978,delay,37,hr/commuter/year,2024
+Springfield MA-CT,MA,25013,42.115454,-72.539978,peak,8.8,% of peak VMT,2024
+St. Louis MO-IL,MO,29510,38.635699,-90.244582,delay,56,hr/commuter/year,2024
+St. Louis MO-IL,MO,29510,38.635699,-90.244582,peak,21.3,% of peak VMT,2024
+Stockton CA,CA,06077,37.976553,-121.308598,delay,54,hr/commuter/year,2024
+Stockton CA,CA,06077,37.976553,-121.308598,peak,30.2,% of peak VMT,2024
+Tampa-St. Petersburg FL,FL,12057,27.970086,-82.479673,delay,64,hr/commuter/year,2024
+Tampa-St. Petersburg FL,FL,12057,27.970086,-82.479673,peak,26.4,% of peak VMT,2024
+Toledo OH-MI,OH,39095,41.664071,-83.581861,delay,37,hr/commuter/year,2024
+Toledo OH-MI,OH,39095,41.664071,-83.581861,peak,9.7,% of peak VMT,2024
+Tucson AZ,AZ,04019,32.153036,-110.870773,delay,50,hr/commuter/year,2024
+Tucson AZ,AZ,04019,32.153036,-110.870773,peak,17.6,% of peak VMT,2024
+Tulsa OK,OK,40143,36.127949,-95.902316,delay,48,hr/commuter/year,2024
+Tulsa OK,OK,40143,36.127949,-95.902316,peak,12.6,% of peak VMT,2024
+Virginia Beach VA,VA,51810,36.779525,-76.029142,delay,46,hr/commuter/year,2024
+Virginia Beach VA,VA,51810,36.779525,-76.029142,peak,16.9,% of peak VMT,2024
+Washington DC-VA-MD,DC,11001,38.904247,-77.016517,delay,90,hr/commuter/year,2024
+Washington DC-VA-MD,DC,11001,38.904247,-77.016517,peak,34.3,% of peak VMT,2024
+Wichita KS,KS,20173,37.690638,-97.345836,delay,38,hr/commuter/year,2024
+Wichita KS,KS,20173,37.690638,-97.345836,peak,18.5,% of peak VMT,2024
+Winston-Salem NC,NC,37067,36.102863,-80.260829,delay,27,hr/commuter/year,2024
+Winston-Salem NC,NC,37067,36.102863,-80.260829,peak,8.9,% of peak VMT,2024
+Worcester MA-CT,MA,25027,42.269478,-71.807783,delay,38,hr/commuter/year,2024
+Worcester MA-CT,MA,25027,42.269478,-71.807783,peak,10.1,% of peak VMT,2024
+Aberdeen-Bel Air S-Bel Air N MD,MD,24025,39.516403,-76.174518,delay,34,hr/commuter/year,2024
+Abilene TX,TX,48441,32.454514,-99.738147,delay,21,hr/commuter/year,2024
+Albany GA,GA,13095,31.578117,-84.176224,delay,26,hr/commuter/year,2024
+Albany OR,OR,41043,44.626928,-123.096741,delay,27,hr/commuter/year,2024
+Alexandria LA,LA,22079,31.293449,-92.470189,delay,54,hr/commuter/year,2024
+Alton IL-MO,IL,17119,38.903898,-90.151204,delay,0,hr/commuter/year,2024
+Altoona PA,PA,42013,40.508052,-78.401114,delay,25,hr/commuter/year,2024
+Amarillo TX,TX,48375,35.198064,-101.833107,delay,29,hr/commuter/year,2024
+Ames IA,IA,19169,42.026327,-93.621264,delay,18,hr/commuter/year,2024
+Anderson IN,IN,18095,40.089766,-85.689449,delay,22,hr/commuter/year,2024
+Anderson SC,SC,45007,34.521487,-82.643517,delay,23,hr/commuter/year,2024
+Ann Arbor MI,MI,26161,42.276147,-83.73086,delay,31,hr/commuter/year,2024
+Anniston-Oxford AL,AL,01015,33.673469,-85.810891,delay,25,hr/commuter/year,2024
+Antioch CA,CA,06013,37.978336,-121.796064,delay,33,hr/commuter/year,2024
+Appleton WI,WI,55087,44.278873,-88.388284,delay,30,hr/commuter/year,2024
+Arroyo Grande-Grover Beach CA,CA,06079,35.124149,-120.584533,delay,48,hr/commuter/year,2024
+Asheville NC,NC,37021,35.570972,-82.552725,delay,52,hr/commuter/year,2024
+Athens-Clarke County GA,GA,13059,33.949597,-83.370088,delay,45,hr/commuter/year,2024
+Atlantic City NJ,NJ,34001,39.377337,-74.45107,delay,37,hr/commuter/year,2024
+Auburn AL,AL,01081,32.607806,-85.494746,delay,38,hr/commuter/year,2024
+Augusta-Richmond County GA-SC,GA,13245,33.365531,-82.073422,delay,34,hr/commuter/year,2024
+Avondale-Goodyear AZ,AZ,04013,33.313236,-112.328928,delay,67,hr/commuter/year,2024
+Bangor ME,ME,23019,44.829625,-68.788767,delay,38,hr/commuter/year,2024
+Barnstable Town MA,MA,25001,41.661478,-70.356951,delay,35,hr/commuter/year,2024
+Battle Creek MI,MI,26025,42.299176,-85.229267,delay,25,hr/commuter/year,2024
+Bay City MI,MI,26017,43.590062,-83.888421,delay,23,hr/commuter/year,2024
+Beckley WV,WV,54081,37.773148,-81.16155,delay,33,hr/commuter/year,2024
+Bellingham WA,WA,53073,48.753442,-122.470179,delay,36,hr/commuter/year,2024
+Beloit WI-IL,WI,55105,42.523506,-89.01766,delay,14,hr/commuter/year,2024
+Bend OR,OR,41017,44.056683,-121.307991,delay,33,hr/commuter/year,2024
+Benton Harbor-St. Joseph-Fair Plain MI,MI,26021,42.113495,-86.44725,delay,17,hr/commuter/year,2024
+Billings MT,MT,30111,45.788538,-108.552475,delay,29,hr/commuter/year,2024
+Binghamton NY-PA,NY,36007,42.101331,-75.909369,delay,33,hr/commuter/year,2024
+Bismarck ND,ND,38015,46.814583,-100.770089,delay,24,hr/commuter/year,2024
+Blacksburg VA,VA,51121,37.231264,-80.426745,delay,20,hr/commuter/year,2024
+Bloomington IN,IN,18105,39.1637,-86.524264,delay,21,hr/commuter/year,2024
+Bloomington-Normal IL,IL,17113,40.475777,-88.969912,delay,14,hr/commuter/year,2024
+Bloomsburg-Berwick PA,PA,42037,41.002717,-76.45658,delay,20,hr/commuter/year,2024
+Bonita Springs FL,FL,12071,26.355011,-81.784234,delay,32,hr/commuter/year,2024
+Bowling Green KY,KY,21227,36.976832,-86.433661,delay,41,hr/commuter/year,2024
+Bremerton WA,WA,53035,47.539877,-122.717048,delay,33,hr/commuter/year,2024
+Bristol TN-VA,TN,47163,36.558549,-82.217001,delay,38,hr/commuter/year,2024
+Brunswick GA,GA,13127,31.136149,-81.466936,delay,29,hr/commuter/year,2024
+Burlington NC,NC,37001,36.076128,-79.4683,delay,22,hr/commuter/year,2024
+Burlington VT,VT,50007,44.491927,-73.238882,delay,46,hr/commuter/year,2024
+Camarillo CA,CA,06111,34.221823,-119.032154,delay,59,hr/commuter/year,2024
+Canton OH,OH,39151,40.80765,-81.367228,delay,31,hr/commuter/year,2024
+Cape Girardeau MO-IL,MO,29031,37.309389,-89.558359,delay,29,hr/commuter/year,2024
+Carbondale IL,IL,17077,37.722062,-89.223664,delay,12,hr/commuter/year,2024
+Carson City NV,NV,32510,39.15306,-119.747368,delay,27,hr/commuter/year,2024
+Cartersville GA,GA,13015,34.164579,-84.801704,delay,37,hr/commuter/year,2024
+Casa Grande AZ,AZ,04021,32.906895,-111.763503,delay,19,hr/commuter/year,2024
+Casper WY,WY,56025,42.84212,-106.321282,delay,25,hr/commuter/year,2024
+Cedar Rapids IA,IA,19113,41.96419,-91.67917,delay,21,hr/commuter/year,2024
+Chambersburg PA,PA,42055,39.931433,-77.655642,delay,25,hr/commuter/year,2024
+Champaign IL,IL,17019,40.114099,-88.274619,delay,16,hr/commuter/year,2024
+Charleston WV,WV,54039,38.348692,-81.632324,delay,36,hr/commuter/year,2024
+Charlottesville VA,VA,51540,38.037658,-78.485381,delay,62,hr/commuter/year,2024
+Chattanooga TN-GA,TN,47065,35.065958,-85.248386,delay,51,hr/commuter/year,2024
+Cheyenne WY,WY,56021,41.128702,-104.790778,delay,35,hr/commuter/year,2024
+Chico CA,CA,06007,39.758951,-121.81772,delay,24,hr/commuter/year,2024
+Clarksville TN-KY,TN,47125,36.56643,-87.345216,delay,31,hr/commuter/year,2024
+Cleveland TN,TN,47011,35.180044,-84.871288,delay,30,hr/commuter/year,2024
+Coeur d'Alene ID,ID,16055,47.702887,-116.795799,delay,40,hr/commuter/year,2024
+College Station-Bryan TX,TX,48041,30.58516,-96.29636,delay,42,hr/commuter/year,2024
+Columbia MO,MO,29019,38.94729,-92.326387,delay,43,hr/commuter/year,2024
+Columbus GA-AL,GA,13215,32.510191,-84.874946,delay,26,hr/commuter/year,2024
+Columbus IN,IN,18005,39.208684,-85.919059,delay,29,hr/commuter/year,2024
+Concord CA,CA,06013,37.972184,-122.001587,delay,79,hr/commuter/year,2024
+Concord NC,NC,37025,35.392094,-80.63551,delay,20,hr/commuter/year,2024
+Conroe-The Woodlands TX,TX,48339,30.328717,-95.4846,delay,53,hr/commuter/year,2024
+Conway AR,AR,05045,35.074404,-92.467004,delay,40,hr/commuter/year,2024
+Corvallis OR,OR,41003,44.569949,-123.278285,delay,18,hr/commuter/year,2024
+Cumberland MD-WV-PA,MD,24001,39.65131,-78.757959,delay,50,hr/commuter/year,2024
+Dalton GA,GA,13313,34.767898,-84.972812,delay,26,hr/commuter/year,2024
+Danbury CT-NY,CT,09001,41.398741,-73.478103,delay,41,hr/commuter/year,2024
+Danville IL,IL,17183,40.142628,-87.610707,delay,15,hr/commuter/year,2024
+Daphne-Fairhope AL,AL,01003,30.627931,-87.872087,delay,38,hr/commuter/year,2024
+Davenport IA-IL,IA,19163,41.55682,-90.603948,delay,21,hr/commuter/year,2024
+Davis CA,CA,06113,38.556147,-121.737793,delay,50,hr/commuter/year,2024
+DeKalb IL,IL,17037,41.928186,-88.747585,delay,11,hr/commuter/year,2024
+Decatur AL,AL,01103,34.572995,-86.989901,delay,29,hr/commuter/year,2024
+Decatur IL,IL,17115,39.855983,-88.933746,delay,20,hr/commuter/year,2024
+Delano CA,CA,06029,35.76643,-119.264221,delay,22,hr/commuter/year,2024
+Deltona FL,FL,12127,28.905121,-81.210978,delay,21,hr/commuter/year,2024
+Denton-Lewisville TX,TX,48121,33.217449,-97.141346,delay,37,hr/commuter/year,2024
+Des Moines IA,IA,19153,41.57259,-93.610243,delay,20,hr/commuter/year,2024
+Dothan AL,AL,01069,31.233698,-85.406823,delay,40,hr/commuter/year,2024
+Dover DE,DE,10001,39.160602,-75.521659,delay,30,hr/commuter/year,2024
+Dover-Rochester NH-ME,NH,33017,43.18636,-70.883623,delay,27,hr/commuter/year,2024
+Dubuque IA-IL,IA,19061,42.498901,-90.707258,delay,20,hr/commuter/year,2024
+Duluth MN-WI,MN,27137,46.774458,-92.134135,delay,33,hr/commuter/year,2024
+Durham NC,NC,37063,35.977928,-78.898109,delay,51,hr/commuter/year,2024
+East Stoudsburg PA-NJ,PA,42089,41.004877,-75.171457,delay,65,hr/commuter/year,2024
+Eau Claire WI,WI,55035,44.818343,-91.494769,delay,23,hr/commuter/year,2024
+El Centro-Calexico CA,CA,06025,32.786351,-115.560206,delay,18,hr/commuter/year,2024
+El Paso de Robles-Atascadero CA,CA,06079,35.628513,-120.650356,delay,58,hr/commuter/year,2024
+Elizabethtown-Radcliff KY,KY,21093,37.704002,-85.878881,delay,22,hr/commuter/year,2024
+Elkhart IN-MI,IN,18039,41.691543,-85.962248,delay,24,hr/commuter/year,2024
+Elmira NY,NY,36015,42.093388,-76.80961,delay,25,hr/commuter/year,2024
+Erie PA,PA,42049,42.116594,-80.073503,delay,28,hr/commuter/year,2024
+Evansville IN-KY,IN,18163,37.987737,-87.534705,delay,25,hr/commuter/year,2024
+Fairfield CA,CA,06095,38.26206,-122.032386,delay,61,hr/commuter/year,2024
+Fargo ND-MN,ND,38017,46.8647,-96.82908,delay,18,hr/commuter/year,2024
+Farmington NM,NM,35045,36.753833,-108.18053,delay,25,hr/commuter/year,2024
+Fayetteville NC,NC,37051,35.082766,-78.973515,delay,34,hr/commuter/year,2024
+Fayetteville-Springdale-Rogers AR-MO,AR,05143,36.071455,-94.166564,delay,44,hr/commuter/year,2024
+Flagstaff AZ,AZ,04005,35.185212,-111.620698,delay,32,hr/commuter/year,2024
+Flint MI,MI,26049,43.02442,-83.691971,delay,24,hr/commuter/year,2024
+Florence AL,AL,01077,34.82981,-87.662202,delay,35,hr/commuter/year,2024
+Florence SC,SC,45041,34.178923,-79.792217,delay,36,hr/commuter/year,2024
+Fond du Lac WI,WI,55039,43.772182,-88.440264,delay,18,hr/commuter/year,2024
+Fort Collins CO,CO,08069,40.548216,-105.064833,delay,37,hr/commuter/year,2024
+Fort Smith AR-OK,AR,05131,35.349276,-94.370883,delay,42,hr/commuter/year,2024
+Fort Walton Beach-Navarre-Wright FL,FL,12091,30.424904,-86.621762,delay,33,hr/commuter/year,2024
+Fort Wayne IN,IN,18003,41.088193,-85.142791,delay,25,hr/commuter/year,2024
+Frederick MD,MD,24021,39.434089,-77.414539,delay,40,hr/commuter/year,2024
+Fredericksburg VA,VA,51630,38.299272,-77.486658,delay,51,hr/commuter/year,2024
+Gadsden AL,AL,01055,34.006597,-86.016078,delay,37,hr/commuter/year,2024
+Gainesville FL,FL,12001,29.679537,-82.346793,delay,37,hr/commuter/year,2024
+Gainesville GA,GA,13139,34.2901,-83.829106,delay,35,hr/commuter/year,2024
+Gastonia NC-SC,NC,37071,35.248796,-81.186436,delay,39,hr/commuter/year,2024
+Gilroy-Morgan Hill CA,CA,06085,37.006407,-121.585321,delay,53,hr/commuter/year,2024
+Glens Falls NY,NY,36113,43.31116,-73.645286,delay,37,hr/commuter/year,2024
+Goldsboro NC,NC,37191,35.378226,-77.971869,delay,23,hr/commuter/year,2024
+Grand Forks ND-MN,ND,38035,47.919595,-97.087328,delay,35,hr/commuter/year,2024
+Grand Island NE,NE,31079,40.921352,-98.358559,delay,15,hr/commuter/year,2024
+Grand Junction CO,CO,08077,39.089062,-108.567452,delay,22,hr/commuter/year,2024
+Grants Pass OR,OR,41033,42.432313,-123.331772,delay,39,hr/commuter/year,2024
+Great Falls MT,MT,30013,47.502518,-111.29997,delay,21,hr/commuter/year,2024
+Greeley CO,CO,08123,40.416576,-104.77328,delay,37,hr/commuter/year,2024
+Green Bay WI,WI,55009,44.521542,-87.986568,delay,30,hr/commuter/year,2024
+Greenville NC,NC,37147,35.596431,-77.375256,delay,35,hr/commuter/year,2024
+Greenville SC,SC,45045,34.836902,-82.362997,delay,48,hr/commuter/year,2024
+Gulfport MS,MS,28047,30.419487,-89.069022,delay,33,hr/commuter/year,2024
+Hagerstown MD-WV-PA,MD,24043,39.640182,-77.722691,delay,28,hr/commuter/year,2024
+Hammond LA,LA,22105,30.50565,-90.456493,delay,27,hr/commuter/year,2024
+Hanford CA,CA,06031,36.327719,-119.654609,delay,17,hr/commuter/year,2024
+Hanover PA,PA,42133,39.811756,-76.983605,delay,34,hr/commuter/year,2024
+Harlingen TX,TX,48061,26.191204,-97.697383,delay,16,hr/commuter/year,2024
+Harrisburg PA,PA,42043,40.275891,-76.88502,delay,44,hr/commuter/year,2024
+Harrisonburg VA,VA,51660,38.436255,-78.873303,delay,23,hr/commuter/year,2024
+Hattiesburg MS,MS,28035,31.307305,-89.317434,delay,38,hr/commuter/year,2024
+Hazleton PA,PA,42079,40.95047,-75.972509,delay,25,hr/commuter/year,2024
+Hemet CA,CA,06065,33.734068,-116.996808,delay,11,hr/commuter/year,2024
+Hickory NC,NC,37035,35.739671,-81.320237,delay,25,hr/commuter/year,2024
+High Point NC,NC,37081,35.990803,-79.992713,delay,19,hr/commuter/year,2024
+Hilton Head Island SC,SC,45013,32.190307,-80.738434,delay,42,hr/commuter/year,2024
+Hinesville GA,GA,13179,31.826702,-81.615773,delay,20,hr/commuter/year,2024
+Holland MI,MI,26005,42.767049,-86.098572,delay,21,hr/commuter/year,2024
+Homosassa Spr-Beverly Hills-Citrus Spr FL,FL,12017,28.809314,-82.540848,delay,22,hr/commuter/year,2024
+Hot Springs AR,AR,05051,34.489442,-93.050254,delay,43,hr/commuter/year,2024
+Houma LA,LA,22109,29.578681,-90.708023,delay,26,hr/commuter/year,2024
+Huntington WV-KY-OH,WV,54011,38.410651,-82.434689,delay,24,hr/commuter/year,2024
+Huntsville AL,AL,01089,34.69772,-86.67667,delay,45,hr/commuter/year,2024
+Idaho Falls ID,ID,16019,43.489616,-112.03534,delay,29,hr/commuter/year,2024
+Iowa City IA,IA,19103,41.655661,-91.530859,delay,22,hr/commuter/year,2024
+Ithaca NY,NY,36109,42.443937,-76.503055,delay,32,hr/commuter/year,2024
+Jackson MI,MI,26075,42.243441,-84.404858,delay,22,hr/commuter/year,2024
+Jackson TN,TN,47113,35.65417,-88.835335,delay,29,hr/commuter/year,2024
+Jacksonville NC,NC,37133,34.72973,-77.393661,delay,24,hr/commuter/year,2024
+Janesville WI,WI,55105,42.684698,-89.01317,delay,26,hr/commuter/year,2024
+Jefferson City MO,MO,29051,38.567461,-92.175254,delay,47,hr/commuter/year,2024
+Johnson City TN,TN,47179,36.342325,-82.380915,delay,29,hr/commuter/year,2024
+Johnstown PA,PA,42021,40.326132,-78.919139,delay,21,hr/commuter/year,2024
+Jonesboro AR,AR,05031,35.819755,-90.679033,delay,44,hr/commuter/year,2024
+Joplin MO,MO,29097,37.075218,-94.501259,delay,27,hr/commuter/year,2024
+Kalamazoo MI,MI,26077,42.275163,-85.588501,delay,25,hr/commuter/year,2024
+Kankakee IL,IL,17091,41.101654,-87.86369,delay,20,hr/commuter/year,2024
+Kennewick-Pasco WA,WA,53005,46.197622,-119.175923,delay,22,hr/commuter/year,2024
+Kenosha WI-IL,WI,55059,42.587526,-87.879996,delay,42,hr/commuter/year,2024
+Killeen TX,TX,48027,31.077669,-97.731952,delay,18,hr/commuter/year,2024
+Kingsport TN-VA,TN,47163,36.51937,-82.543393,delay,31,hr/commuter/year,2024
+Kingston NY,NY,36111,41.930124,-73.996782,delay,22,hr/commuter/year,2024
+Kissimmee FL,FL,12097,28.30278,-81.417831,delay,61,hr/commuter/year,2024
+Kokomo IN,IN,18067,40.464011,-86.127349,delay,15,hr/commuter/year,2024
+La Crosse WI-MN,WI,55063,43.824685,-91.224616,delay,34,hr/commuter/year,2024
+Lady Lake-The Villages FL,FL,12069,28.919754,-81.932759,delay,14,hr/commuter/year,2024
+Lafayette IN,IN,18157,40.39941,-86.862806,delay,23,hr/commuter/year,2024
+Lafayette LA,LA,22055,30.2056,-92.028058,delay,51,hr/commuter/year,2024
+Lafayette-Louisville-Erie CO,CO,08013,39.994814,-105.099676,delay,23,hr/commuter/year,2024
+Lake Charles LA,LA,22019,30.19902,-93.210835,delay,66,hr/commuter/year,2024
+Lake Havasu City AZ,AZ,04015,34.499809,-114.310943,delay,9,hr/commuter/year,2024
+Lake Jackson-Angleton TX,TX,48039,29.050864,-95.45123,delay,21,hr/commuter/year,2024
+Lakeland FL,FL,12105,28.055496,-81.954772,delay,31,hr/commuter/year,2024
+Lancaster PA,PA,42071,40.042061,-76.30099,delay,38,hr/commuter/year,2024
+Lansing MI,MI,26065,42.714341,-84.560889,delay,29,hr/commuter/year,2024
+Las Cruces NM,NM,35013,32.326444,-106.789695,delay,30,hr/commuter/year,2024
+Lawrence KS,KS,20045,38.959551,-95.265468,delay,18,hr/commuter/year,2024
+Lawton OK,OK,40031,34.617172,-98.4214,delay,14,hr/commuter/year,2024
+Lebanon PA,PA,42075,40.341193,-76.422735,delay,15,hr/commuter/year,2024
+Leesburg-Eustis-Tavares FL,FL,12069,28.717206,-81.903089,delay,22,hr/commuter/year,2024
+Leominster-Fitchburg MA,MA,25027,42.520876,-71.770611,delay,28,hr/commuter/year,2024
+Lewiston ID-WA,ID,16069,46.39313,-116.993472,delay,16,hr/commuter/year,2024
+Lewiston ME,ME,23001,44.089513,-70.172095,delay,28,hr/commuter/year,2024
+Lexington Park-Cal-Ches Ranch Est MD,MD,24037,38.249403,-76.443556,delay,25,hr/commuter/year,2024
+Lexington-Fayette KY,KY,21067,38.040678,-84.458272,delay,57,hr/commuter/year,2024
+Lima OH,OH,39003,40.740679,-84.112091,delay,19,hr/commuter/year,2024
+Lincoln NE,NE,31109,40.810284,-96.674856,delay,31,hr/commuter/year,2024
+Livermore CA,CA,06001,37.686977,-121.759781,delay,50,hr/commuter/year,2024
+Lodi CA,CA,06077,38.12161,-121.290765,delay,56,hr/commuter/year,2024
+Logan UT,UT,49005,41.740256,-111.841764,delay,17,hr/commuter/year,2024
+Lompoc CA,CA,06083,34.662689,-120.470837,delay,11,hr/commuter/year,2024
+Longmont CO,CO,08013,40.168199,-105.100522,delay,42,hr/commuter/year,2024
+Longview TX,TX,48183,32.520234,-94.761114,delay,37,hr/commuter/year,2024
+Longview WA-OR,WA,53015,46.145707,-122.964299,delay,32,hr/commuter/year,2024
+Lorain-Elyria OH,OH,39093,41.438805,-82.179722,delay,19,hr/commuter/year,2024
+Los Lunas NM,NM,35061,34.80087,-106.788691,delay,15,hr/commuter/year,2024
+Lubbock TX,TX,48303,33.561901,-101.888883,delay,22,hr/commuter/year,2024
+Lynchburg VA,VA,51680,37.399016,-79.195458,delay,36,hr/commuter/year,2024
+Macon GA,GA,13021,32.80899,-83.69406,delay,35,hr/commuter/year,2024
+Madera CA,CA,06039,36.965774,-120.08616,delay,35,hr/commuter/year,2024
+Manchester NH,NH,33011,42.984941,-71.444131,delay,42,hr/commuter/year,2024
+Mandeville-Covington LA,LA,22103,30.376735,-90.101067,delay,67,hr/commuter/year,2024
+Manhattan KS,KS,20161,39.188307,-96.605864,delay,23,hr/commuter/year,2024
+Mankato MN,MN,27013,44.171122,-93.97638,delay,29,hr/commuter/year,2024
+Mansfield OH,OH,39139,40.76672,-82.53082,delay,27,hr/commuter/year,2024
+Manteca CA,CA,06077,37.790498,-121.230626,delay,54,hr/commuter/year,2024
+Marysville WA,WA,53061,48.080214,-122.154312,delay,36,hr/commuter/year,2024
+Mauldin-Simpsonville SC,SC,45045,34.781025,-82.304234,delay,46,hr/commuter/year,2024
+McKinney TX,TX,48085,33.201125,-96.664161,delay,57,hr/commuter/year,2024
+Medford OR,OR,41029,42.336006,-122.851762,delay,30,hr/commuter/year,2024
+Merced CA,CA,06047,37.305721,-120.477907,delay,34,hr/commuter/year,2024
+Michigan City-La Porte IN-MI,IN,18091,41.708776,-86.866875,delay,11,hr/commuter/year,2024
+Middletown OH,OH,39017,39.502952,-84.364893,delay,15,hr/commuter/year,2024
+Midland MI,MI,26111,43.624796,-84.231984,delay,17,hr/commuter/year,2024
+Midland TX,TX,48329,32.024642,-102.113467,delay,38,hr/commuter/year,2024
+Mission Viejo-Lake Forest-San Clem CA,CA,06059,33.609335,-117.656471,delay,51,hr/commuter/year,2024
+Missoula MT,MT,30063,46.874359,-114.026136,delay,41,hr/commuter/year,2024
+Mobile AL,AL,01097,30.668246,-88.107853,delay,54,hr/commuter/year,2024
+Modesto CA,CA,06099,37.637533,-121.003049,delay,40,hr/commuter/year,2024
+Monessen-California PA,PA,42129,40.151966,-79.883008,delay,31,hr/commuter/year,2024
+Monroe LA,LA,22073,32.518986,-92.07718,delay,41,hr/commuter/year,2024
+Monroe MI,MI,26115,41.916586,-83.384324,delay,18,hr/commuter/year,2024
+Montgomery AL,AL,01101,32.348503,-86.267307,delay,38,hr/commuter/year,2024
+Morgantown WV,WV,54061,39.637487,-79.946856,delay,27,hr/commuter/year,2024
+Morristown TN,TN,47063,36.204351,-83.300032,delay,30,hr/commuter/year,2024
+Mount Vernon WA,WA,53057,48.417071,-122.311832,delay,36,hr/commuter/year,2024
+Muncie IN,IN,18035,40.198826,-85.395059,delay,17,hr/commuter/year,2024
+Murrieta-Temecula-Menifee CA,CA,06065,33.573214,-117.191007,delay,42,hr/commuter/year,2024
+Muskegon MI,MI,26121,43.22654,-86.257247,delay,21,hr/commuter/year,2024
+Myrtle Beach-Socastee SC-NC,SC,45051,33.71039,-78.886024,delay,48,hr/commuter/year,2024
+Nampa ID,ID,16027,43.584972,-116.562935,delay,28,hr/commuter/year,2024
+Napa CA,CA,06055,38.297872,-122.300741,delay,62,hr/commuter/year,2024
+Nashua NH-MA,NH,33011,42.749074,-71.490544,delay,28,hr/commuter/year,2024
+New Bedford MA,MA,25005,41.661303,-70.937913,delay,28,hr/commuter/year,2024
+New Bern NC,NC,37049,35.096688,-77.072641,delay,27,hr/commuter/year,2024
+Newark OH,OH,39089,40.071503,-82.424221,delay,37,hr/commuter/year,2024
+Norman OK,OK,40027,35.240569,-97.345299,delay,57,hr/commuter/year,2024
+North Port-Port Charlotte FL,FL,12115,27.058166,-82.198044,delay,20,hr/commuter/year,2024
+Norwich-New London CT-RI,CT,09011,41.548006,-72.089454,delay,31,hr/commuter/year,2024
+Ocala FL,FL,12083,29.17751,-82.151025,delay,38,hr/commuter/year,2024
+Odessa TX,TX,48135,31.880461,-102.345314,delay,33,hr/commuter/year,2024
+Ogden-Layton UT,UT,49057,41.228391,-111.968147,delay,32,hr/commuter/year,2024
+Olympia-Lacey WA,WA,53067,47.040604,-122.895,delay,30,hr/commuter/year,2024
+Oshkosh WI,WI,55139,44.023168,-88.56226,delay,20,hr/commuter/year,2024
+Owensboro KY,KY,21059,37.757172,-87.117398,delay,18,hr/commuter/year,2024
+Palm Bay-Melbourne FL,FL,12009,27.954802,-80.664962,delay,29,hr/commuter/year,2024
+Palm Coast-Daytona Bch-Port Orange FL,FL,12035,29.536837,-81.242627,delay,23,hr/commuter/year,2024
+Panama City FL,FL,12005,30.166271,-85.670191,delay,34,hr/commuter/year,2024
+Parkersburg WV-OH,WV,54107,39.261278,-81.54335,delay,22,hr/commuter/year,2024
+Pascagoula MS,MS,28059,30.360067,-88.556327,delay,22,hr/commuter/year,2024
+Peoria IL,IL,17143,40.751641,-89.617198,delay,20,hr/commuter/year,2024
+Petaluma CA,CA,06097,38.242251,-122.628769,delay,54,hr/commuter/year,2024
+Pine Bluff AR,AR,05069,34.211591,-92.017555,delay,21,hr/commuter/year,2024
+Pittsfield MA,MA,25003,42.45184,-73.260685,delay,24,hr/commuter/year,2024
+Pocatello ID,ID,16005,42.872748,-112.463836,delay,21,hr/commuter/year,2024
+Port Arthur TX,TX,48245,29.900008,-93.89442,delay,20,hr/commuter/year,2024
+Port Huron MI,MI,26147,42.993766,-82.433743,delay,21,hr/commuter/year,2024
+Port St. Lucie FL,FL,12111,27.280554,-80.388261,delay,32,hr/commuter/year,2024
+Porterville CA,CA,06107,36.063542,-119.0336,delay,7,hr/commuter/year,2024
+Portland ME,ME,23005,43.624901,-70.331129,delay,33,hr/commuter/year,2024
+Portsmouth NH-ME,NH,33015,43.060594,-70.780349,delay,33,hr/commuter/year,2024
+Pottstown PA,PA,42091,40.250924,-75.644754,delay,22,hr/commuter/year,2024
+Prescott Valley-Prescott AZ,AZ,04025,34.59793,-112.318497,delay,33,hr/commuter/year,2024
+Pueblo CO,CO,08101,38.269228,-104.610816,delay,52,hr/commuter/year,2024
+Racine WI,WI,55101,42.725569,-87.814224,delay,28,hr/commuter/year,2024
+Rapid City SD,SD,46103,44.071071,-103.217924,delay,33,hr/commuter/year,2024
+Reading PA,PA,42011,40.33922,-75.926277,delay,38,hr/commuter/year,2024
+Redding CA,CA,06089,40.570277,-122.366766,delay,25,hr/commuter/year,2024
+Reno NV-CA,NV,32031,39.549097,-119.849907,delay,52,hr/commuter/year,2024
+Roanoke VA,VA,51770,37.278458,-79.958174,delay,28,hr/commuter/year,2024
+Rochester MN,MN,27109,44.014299,-92.478592,delay,39,hr/commuter/year,2024
+Rock Hill SC,SC,45091,34.938216,-81.019177,delay,31,hr/commuter/year,2024
+Rockford IL,IL,17201,42.2593,-89.063478,delay,20,hr/commuter/year,2024
+Rocky Mount NC,NC,37127,35.968514,-77.808294,delay,22,hr/commuter/year,2024
+Rome GA,GA,13115,34.266133,-85.186052,delay,39,hr/commuter/year,2024
+Round Lake Bch-McHenry-Grayslake IL-WI,IL,17097,42.382409,-88.080689,delay,2,hr/commuter/year,2024
+Saginaw MI,MI,26145,43.419945,-83.950172,delay,22,hr/commuter/year,2024
+Salinas CA,CA,06053,36.690217,-121.633793,delay,44,hr/commuter/year,2024
+Salisbury MD-DE,MD,24045,38.375328,-75.585925,delay,26,hr/commuter/year,2024
+San Angelo TX,TX,48451,31.441078,-100.450499,delay,22,hr/commuter/year,2024
+San Luis Obispo CA,CA,06079,35.266195,-120.668438,delay,26,hr/commuter/year,2024
+San Marcos TX,TX,48209,29.87361,-97.936725,delay,33,hr/commuter/year,2024
+Santa Barbara CA,CA,06083,34.403592,-119.713714,delay,85,hr/commuter/year,2024
+Santa Clarita CA,CA,06037,34.416504,-118.500693,delay,38,hr/commuter/year,2024
+Santa Cruz CA,CA,06087,36.974385,-122.035268,delay,87,hr/commuter/year,2024
+Santa Fe NM,NM,35049,35.661981,-105.981815,delay,40,hr/commuter/year,2024
+Santa Maria CA,CA,06083,34.933076,-120.443559,delay,19,hr/commuter/year,2024
+Santa Rosa CA,CA,06097,38.445824,-122.706181,delay,61,hr/commuter/year,2024
+Saratoga Springs NY,NY,36091,43.067704,-73.778142,delay,28,hr/commuter/year,2024
+Savannah GA,GA,13051,32.018043,-81.196492,delay,57,hr/commuter/year,2024
+Scranton PA,PA,42069,41.404178,-75.665908,delay,29,hr/commuter/year,2024
+Seaside-Monterey CA,CA,06053,36.625058,-121.817804,delay,56,hr/commuter/year,2024
+Sebastian-Vero Bch S-Florida Ridge FL,FL,12061,27.779212,-80.482654,delay,20,hr/commuter/year,2024
+Sebring-Avon Park FL,FL,12055,27.471396,-81.451568,delay,18,hr/commuter/year,2024
+Sheboygan WI,WI,55117,43.738713,-87.731531,delay,15,hr/commuter/year,2024
+Sherman TX,TX,48181,33.628596,-96.626722,delay,17,hr/commuter/year,2024
+Shreveport LA,LA,22017,32.466879,-93.792193,delay,50,hr/commuter/year,2024
+Sierra Vista AZ,AZ,04003,31.56541,-110.314508,delay,14,hr/commuter/year,2024
+Simi Valley CA,CA,06111,34.266887,-118.748458,delay,28,hr/commuter/year,2024
+Sioux City IA-NE-SD,IA,19193,42.49538,-96.389495,delay,24,hr/commuter/year,2024
+Sioux Falls SD,SD,46099,43.540696,-96.731962,delay,25,hr/commuter/year,2024
+Slidell LA,LA,22103,30.288913,-89.782926,delay,36,hr/commuter/year,2024
+South Bend IN-MI,IN,18141,41.676643,-86.268809,delay,23,hr/commuter/year,2024
+South Lyon-Howell MI,MI,26125,42.461015,-83.653169,delay,29,hr/commuter/year,2024
+Spartanburg SC,SC,45083,34.945627,-81.925944,delay,37,hr/commuter/year,2024
+Spring Hill FL,FL,12053,28.479207,-82.529658,delay,18,hr/commuter/year,2024
+Springfield IL,IL,17167,39.791063,-89.644572,delay,23,hr/commuter/year,2024
+Springfield MO,MO,29077,37.194157,-93.292642,delay,54,hr/commuter/year,2024
+Springfield OH,OH,39023,39.928908,-83.794241,delay,15,hr/commuter/year,2024
+St. Augustine FL,FL,12109,29.896152,-81.311128,delay,28,hr/commuter/year,2024
+St. Cloud MN,MN,27145,45.526658,-94.171007,delay,28,hr/commuter/year,2024
+St. George UT,UT,49053,37.077006,-113.576534,delay,31,hr/commuter/year,2024
+St. Joseph MO-KS,MO,29021,39.75946,-94.821143,delay,25,hr/commuter/year,2024
+State College PA,PA,42027,40.791039,-77.856813,delay,17,hr/commuter/year,2024
+Staunton-Waynesboro VA,VA,51790,38.157978,-79.061876,delay,20,hr/commuter/year,2024
+Sumter SC,SC,45085,33.940848,-80.395543,delay,27,hr/commuter/year,2024
+Syracuse NY,NY,36067,43.040998,-76.143554,delay,29,hr/commuter/year,2024
+Tallahassee FL,FL,12073,30.453529,-84.252272,delay,39,hr/commuter/year,2024
+Temple TX,TX,48027,31.104936,-97.388512,delay,36,hr/commuter/year,2024
+Terre Haute IN,IN,18167,39.464152,-87.376036,delay,25,hr/commuter/year,2024
+Texarkana TX-AR,TX,48037,33.449204,-94.085008,delay,26,hr/commuter/year,2024
+Texas City TX,TX,48167,29.364635,-94.997589,delay,36,hr/commuter/year,2024
+Thousand Oaks CA,CA,06111,34.19329,-118.874235,delay,73,hr/commuter/year,2024
+Titusville FL,FL,12009,28.573368,-80.819404,delay,18,hr/commuter/year,2024
+Topeka KS,KS,20177,39.034673,-95.696191,delay,33,hr/commuter/year,2024
+Tracy CA,CA,06077,37.727396,-121.452195,delay,32,hr/commuter/year,2024
+Trenton NJ,NJ,34021,40.223841,-74.763624,delay,41,hr/commuter/year,2024
+Turlock CA,CA,06099,37.505524,-120.859269,delay,38,hr/commuter/year,2024
+Tuscaloosa AL,AL,01125,33.234404,-87.5283,delay,40,hr/commuter/year,2024
+Twin Rivers-Highstown NJ,NJ,34021,40.263538,-74.491923,delay,42,hr/commuter/year,2024
+Tyler TX,TX,48423,32.317258,-95.305886,delay,45,hr/commuter/year,2024
+Uniontown-Connellsville PA,PA,42051,39.899302,-79.724529,delay,25,hr/commuter/year,2024
+Utica NY,NY,36065,43.096382,-75.225983,delay,29,hr/commuter/year,2024
+Vacaville CA,CA,06095,38.358621,-121.968601,delay,37,hr/commuter/year,2024
+Valdosta GA,GA,13185,30.850126,-83.278833,delay,35,hr/commuter/year,2024
+Vallejo CA,CA,06095,38.106909,-122.262339,delay,71,hr/commuter/year,2024
+Victoria TX,TX,48469,28.828528,-96.986015,delay,28,hr/commuter/year,2024
+Victorville-Hesperia CA,CA,06071,34.527735,-117.353579,delay,20,hr/commuter/year,2024
+Villas NJ,NJ,34009,39.016268,-74.935972,delay,33,hr/commuter/year,2024
+Vineland NJ,NJ,34011,39.465007,-74.997115,delay,15,hr/commuter/year,2024
+Visalia CA,CA,06107,36.32803,-119.328519,delay,24,hr/commuter/year,2024
+Waco TX,TX,48309,31.557994,-97.18975,delay,27,hr/commuter/year,2024
+Waldorf MD,MD,24017,38.609172,-76.919776,delay,38,hr/commuter/year,2024
+Walla Walla-WA-OR,WA,53071,46.067006,-118.337033,delay,14,hr/commuter/year,2024
+Warner Robins GA,GA,13153,32.597096,-83.653936,delay,22,hr/commuter/year,2024
+Waterbury CT,CT,09009,41.5585,-73.036685,delay,48,hr/commuter/year,2024
+Waterloo IA,IA,19013,42.492327,-92.351947,delay,17,hr/commuter/year,2024
+Watertown NY,NY,36045,43.973292,-75.910039,delay,22,hr/commuter/year,2024
+Watsonville CA,CA,06087,36.923587,-121.772395,delay,24,hr/commuter/year,2024
+Wausau WI,WI,55073,44.961766,-89.646538,delay,34,hr/commuter/year,2024
+Weirton-Steubenville WV-OH-PA,WV,54029,40.406331,-80.56558,delay,37,hr/commuter/year,2024
+Wenatchee WA,WA,53007,47.435985,-120.329266,delay,32,hr/commuter/year,2024
+West Bend WI,WI,55131,43.417492,-88.181685,delay,15,hr/commuter/year,2024
+Westminster-Eldersburg MD,MD,24013,39.579154,-77.006691,delay,25,hr/commuter/year,2024
+Wheeling WV-OH,WV,54069,40.073753,-80.696027,delay,62,hr/commuter/year,2024
+Wichita Falls TX,TX,48485,33.906654,-98.525848,delay,15,hr/commuter/year,2024
+Williamsburg VA,VA,51830,37.269481,-76.708193,delay,25,hr/commuter/year,2024
+Williamsport PA,PA,42081,41.240019,-77.035591,delay,36,hr/commuter/year,2024
+Wilmington NC,NC,37129,34.209225,-77.885767,delay,40,hr/commuter/year,2024
+Winchester VA,VA,51840,39.173869,-78.176356,delay,31,hr/commuter/year,2024
+Winter Haven FL,FL,12105,28.045836,-81.732743,delay,27,hr/commuter/year,2024
+Woodland CA,CA,06113,38.67116,-121.750043,delay,15,hr/commuter/year,2024
+Yakima WA,WA,53077,46.590938,-120.5494,delay,28,hr/commuter/year,2024
+York PA,PA,42133,39.964798,-76.73184,delay,37,hr/commuter/year,2024
+Youngstown OH-PA,OH,39099,41.099095,-80.645902,delay,22,hr/commuter/year,2024
+Yuba City CA,CA,06101,39.129842,-121.641549,delay,36,hr/commuter/year,2024
+Yuma AZ-CA,AZ,04027,32.516286,-114.521782,delay,23,hr/commuter/year,2024
+Zephyrhills FL,FL,12101,28.240721,-82.179024,delay,30,hr/commuter/year,2024

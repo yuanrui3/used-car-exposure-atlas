@@ -1,0 +1,48 @@
+{
+  "period": "2026-05, New York statewide",
+  "filters": [
+    "inspection_date >= '2026-05-01T00:00:00'",
+    "inspection_date < '2026-06-01T00:00:00'",
+    "inspection_type='INITIAL INSPECTION'",
+    "registration_class='PASSENGER'",
+    "model_year=2018",
+    "make_code='TOYOT'",
+    "upper(model_name)='CAMRY'",
+    "odometer_reading >= 60000",
+    "odometer_reading < 130000",
+    "safety_inspection_result in ('PASS','FAIL')"
+  ],
+  "mileage_bins_lower_inclusive_width_10000": {
+    "60000": {
+      "PASS": 62,
+      "FAIL": 4
+    },
+    "70000": {
+      "PASS": 58,
+      "FAIL": 0
+    },
+    "80000": {
+      "PASS": 69,
+      "FAIL": 2
+    },
+    "90000": {
+      "PASS": 61,
+      "FAIL": 0
+    },
+    "100000": {
+      "PASS": 42,
+      "FAIL": 1
+    },
+    "110000": {
+      "PASS": 33,
+      "FAIL": 1
+    },
+    "120000": {
+      "PASS": 29,
+      "FAIL": 2
+    }
+  },
+  "n": 364,
+  "fails": 10,
+  "role": "A sizing exercise using transactions, overall safety outcome and DMV-entered model. Does not test geography, identify a failing part or measure individual lifetime exposure."
+}
